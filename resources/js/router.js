@@ -1,6 +1,7 @@
 /**Este archivo simplemente sirve para gestionar las vista de la aplicacion */
 import { createRouter, createWebHistory } from 'vue-router'
-import viewPrincipal from './views/viewPrincipal.vue'
+import viewVistaPrincipal from './views/viewVistaPrincipal.vue'
+import viewSinResultado from './views/viewSinResultado.vue'
 // import viewApi from './views/viewApi.vue'
 // import viewComponentes from './views/viewComponentes.vue'
 // import viewComponentesDinamicos from './views/viewComponentesDinamicos.vue'
@@ -10,7 +11,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'principal',
-      component: viewPrincipal,
+      component: viewVistaPrincipal,
     },
     // {
     //   path: '/componentes',
@@ -27,12 +28,12 @@ const router = createRouter({
     //   name: 'apis',
     //   component: viewApi,
     // },
-    //  //esta tiene que ser siempre la ultima (ruta para cuando no encuentra la ruta(valga la redundancia))
-    // {
-    //   path: '/:pathMatch(.*)*',
-    //   name: 'SinResultado',
-    //   component: viewSinResultado,
-    // },
+     //esta tiene que ser siempre la ultima (ruta para cuando no encuentra la ruta(valga la redundancia))
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'SinResultado',
+      component: viewSinResultado,
+    },
   ],
 })
 
