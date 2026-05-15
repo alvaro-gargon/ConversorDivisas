@@ -5,24 +5,23 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <main>
     <header class="header-pagina-principal-vue">
-      <h1>Esta es una prueba de primer uso del framework VUE</h1>
+      <div class="cajaLogo">
+        "imagen logo"
+      </div>
+      <h1>Álvaro García González</h1>
+      <div class="cajaInfo">
+        <p>DAW I.E.S Los Sauces</p>
+      </div>
     </header>
-    <h3 style="text-align: center">
-      Como se puede comprobar,esto es una SPA (single page application) ya que, aunque cambia la
-      ruta en la url, en verdad seguimos en la misma página, y NO SE HA RECARGADO al cambiar la ruta
-    </h3>
 
     <RouterView />
   </main>
   <footer>
-    <RouterLink to="/"><button>Principal</button></RouterLink>
-    <RouterLink to="/componentes"><button>Componentes</button></RouterLink>
-    <RouterLink to="/apis"><button>APIs</button></RouterLink>
-    <RouterLink to="/componentes-dinamicos"><button>Comp. Dinamicos</button></RouterLink>
+
   </footer>
 </template>
 
-<style>
+<style scoped>
 html,
 body,
 #app {
@@ -40,12 +39,20 @@ main {
 }
 
 .header-pagina-principal-vue {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
   background-color: orange;
   text-align: center;
 }
 
 .header-pagina-principal-vue h1 {
-  margin: 0;
+  /* margin: 0; */
+}
+
+.cajaInfo{
+  align-content: center;
+  text-align: center;
 }
 
 footer {
