@@ -5,7 +5,7 @@
     <input v-model="nombre" type="text" placeholder="Nombre" /><br>
     <input v-model="email" type="email" placeholder="Email" /><br>
     <input v-model="password" type="password" placeholder="Contraseña" /><br>
-    <button @click="register">Crear cuenta</button>
+    <button @click="registrarse">Crear cuenta</button>
     <p>¿Ya tienes cuenta? <RouterLink to="/">Inicia sesión</RouterLink></p>
   </div>
 </template>
