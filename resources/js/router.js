@@ -4,6 +4,8 @@ import viewVistaPrincipal from './views/viewVistaPrincipal.vue'
 import viewSinResultado from './views/viewSinResultado.vue'
 import ViewLogIn from './views/viewLogIn.vue'
 import ViewRegistro from './views/viewRegistro.vue'
+import ViewPruebaSaltarLogin from './views/viewPruebaSaltarLogin.vue'
+import { estaLogeado } from './auth.js'
 // import viewApi from './views/viewApi.vue'
 // import viewComponentes from './views/viewComponentes.vue'
 // import viewComponentesDinamicos from './views/viewComponentesDinamicos.vue'
@@ -24,22 +26,14 @@ const router = createRouter({
       path: '/home',
       name: 'principal',
       component: viewVistaPrincipal,
+      meta: { requiresAuth: true }
     },
-    // {
-    //   path: '/componentes',
-    //   name: 'componentes',
-    //   component: viewComponentes,
-    // },
-    // {
-    //   path: '/componentes-dinamicos',
-    //   name: 'componentes-dinamicos',
-    //   component: viewComponentesDinamicos,
-    // },
-    // {
-    //   path: '/apis',
-    //   name: 'apis',
-    //   component: viewApi,
-    // },
+    {
+      path: '/saltarLogin',
+      name: 'saltarLogin',
+      component: ViewPruebaSaltarLogin,
+      meta: { requiresAuth: true }
+    },
      //esta tiene que ser siempre la ultima (ruta para cuando no encuentra la ruta(valga la redundancia))
     {
       path: '/:pathMatch(.*)*',
@@ -47,6 +41,17 @@ const router = createRouter({
       component: viewSinResultado,
     },
   ],
+
+  
 })
 
+
+//comprobacion de que ha iniciado sesion
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth && !estaLogeado()) {
+    next('/')  // mandar al login sino ha iniciado sesion
+  } else {
+    next()
+  }
+})
 export default router
