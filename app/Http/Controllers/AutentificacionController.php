@@ -16,7 +16,7 @@ class AutentificacionController extends Controller
             'password' => bcrypt($request->password),
         ]);
         return response()->json([
-            'token' => $usuario->createToken('app')->plainTextToken
+            'token' => $usuario->createToken('app')->plainTextToken //'app' se podria cambiar por cualquier cosa, es solo un nombre identificativo
         ]);
     }
 

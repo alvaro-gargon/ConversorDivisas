@@ -8,12 +8,12 @@ export function obtenerToken()
 }
 export function estaLogeado()
 { 
-    return !!getToken() 
+    return !!obtenerToken() 
 }
 
 export function setToken(token) {
     localStorage.setItem('token', token)
-    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}` //esto sirve para añadir a la cabezera de la url el token en el campo Authorization
 }
 
 export function logout() {
@@ -22,4 +22,4 @@ export function logout() {
 }
 
 // Esta linea sirve para, una vez se recarga la pagina, se restaura el token i no se pierda
-if (getToken()) setToken(getToken())
+if (obtenerToken()) setToken(obtenerToken())
