@@ -46,9 +46,6 @@ main {
   text-align: center;
 }
 
-.header-pagina-principal-vue h1 {
-  /* margin: 0; */
-}
 
 .cajaInfo{
   align-content: center;
