@@ -18,7 +18,7 @@ export default {
   name: 'RegistroView',
   data() {
     return {
-      name: '',
+      nombre: '',
       email: '',
       password: '',
       error: ''
@@ -28,7 +28,7 @@ export default {
     async registrarse() {
       try {
         const { data } = await axios.post('/api/registro', {
-          name: this.name,
+          nombre: this.nombre,
           email: this.email,
           password: this.password
         })
