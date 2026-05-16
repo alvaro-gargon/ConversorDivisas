@@ -2,7 +2,6 @@
   <div>
     <h2>Iniciar sesión</h2>
     <p v-if="error" style="color:red">{{ error }}</p>
-    <input v-model="nombre" type="text" placeholder="Nombre">
     <input v-model="email" type="email" placeholder="Email" /><br>
     <input v-model="password" type="password" placeholder="Contraseña" /><br>
     <button @click="login">Entrar</button>
@@ -18,7 +17,6 @@ export default {
   name: 'LoginView',
   data() {
     return {
-      nombre: '',
       email: '',
       password: '',
       error: ''
