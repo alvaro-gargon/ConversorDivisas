@@ -4,7 +4,6 @@ import viewVistaPrincipal from './views/viewVistaPrincipal.vue'
 import viewSinResultado from './views/viewSinResultado.vue'
 import ViewLogIn from './views/viewLogIn.vue'
 import ViewRegistro from './views/viewRegistro.vue'
-import ViewPruebaSaltarLogin from './views/viewPruebaSaltarLogin.vue'
 import { estaLogeado } from './auth.js'
 // import viewApi from './views/viewApi.vue'
 // import viewComponentes from './views/viewComponentes.vue'
@@ -26,12 +25,6 @@ const router = createRouter({
       path: '/home',
       name: 'principal',
       component: viewVistaPrincipal,
-      meta: { requiresAuth: true }
-    },
-    {
-      path: '/saltarLogin',
-      name: 'saltarLogin',
-      component: ViewPruebaSaltarLogin,
       meta: { requiresAuth: true }
     },
      //esta tiene que ser siempre la ultima (ruta para cuando no encuentra la ruta(valga la redundancia))

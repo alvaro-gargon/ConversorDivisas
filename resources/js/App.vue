@@ -22,6 +22,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@400;500&display=swap');
+
 html,
 body,
 #app {
@@ -34,26 +36,55 @@ body,
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex-grow: 1;
+  background: #0E0F12;
 }
 
 .header-pagina-principal-vue {
   display: flex;
   align-content: center;
   justify-content: space-evenly;
-  background-color: orange;
   text-align: center;
+  background: #0E0F12;
+  border-bottom: 1px solid #252629;
+  padding: 0.85rem 2rem;
+  align-items: center;
 }
 
+.header-pagina-principal-vue h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #EDE9E0;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
 
-.cajaInfo{
+.cajaLogo {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 13px;
+  color: #5A5856;
+}
+
+.cajaInfo {
   align-content: center;
   text-align: center;
 }
 
+.cajaInfo p {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B8955A;
+  margin: 0;
+}
+
 footer {
-  background-color: antiquewhite;
+  background: #0E0F12;
+  border-top: 1px solid #252629;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -62,9 +93,19 @@ footer {
 footer button {
   width: 160px;
   height: 40px;
-  background-color: orange;
-  color: white;
-  border: 1px solid black;
+  background: #16171C;
+  color: #EDE9E0;
+  border: 1px solid #252629;
   border-radius: 10px;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+footer button:hover {
+  border-color: #B8955A;
+  background: #1C1C22;
 }
 </style>
