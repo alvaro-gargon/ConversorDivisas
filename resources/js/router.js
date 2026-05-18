@@ -5,6 +5,9 @@ import viewSinResultado from './views/viewSinResultado.vue'
 import ViewLogIn from './views/viewLogIn.vue'
 import ViewRegistro from './views/viewRegistro.vue'
 import { estaLogeado } from './auth.js'
+import ViewConversor from './views/viewConversor.vue'
+import ViewHistorico from './views/viewHistorico.vue'
+import ViewGestionarDivisas from './views/viewGestionarDivisas.vue'
 // import viewApi from './views/viewApi.vue'
 // import viewComponentes from './views/viewComponentes.vue'
 // import viewComponentesDinamicos from './views/viewComponentesDinamicos.vue'
@@ -25,6 +28,24 @@ const router = createRouter({
       path: '/home',
       name: 'principal',
       component: viewVistaPrincipal,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/conversor',
+      name: 'conversor',
+      component: ViewConversor,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/historico',
+      name: 'historico',
+      component: ViewHistorico,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/gestionDivisas',
+      name: 'gestionDivisas',
+      component: ViewGestionarDivisas,
       meta: { requiresAuth: true }
     },
      //esta tiene que ser siempre la ultima (ruta para cuando no encuentra la ruta(valga la redundancia))

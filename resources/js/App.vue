@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterView />
   </main>
   <footer>
-
+      <h2>Álvaro García González</h2>
   </footer>
 </template>
 
@@ -30,7 +30,9 @@ body,
   height: 100%;
   margin: 0;
 }
-
+*{
+  color:#EDE9E0;
+}
 #app {
   display: flex;
   flex-direction: column;
