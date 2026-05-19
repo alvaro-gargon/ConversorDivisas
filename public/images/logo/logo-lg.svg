@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 36" fill="none">
+  <rect x="1" y="1" width="34" height="34" rx="5" stroke="#B8955A" stroke-width="1.1"/>
+  <rect x="8" y="8" width="20" height="20" rx="2.5" stroke="#B8955A" stroke-width="0.8" stroke-dasharray="2.5 2.5"/>
+  <line x1="18" y1="3" x2="18" y2="33" stroke="#B8955A" stroke-width="0.8"/>
+  <line x1="3" y1="18" x2="33" y2="18" stroke="#B8955A" stroke-width="0.8"/>
+  <circle cx="18" cy="18" r="3.5" fill="#B8955A"/>
+  <circle cx="18" cy="18" r="1.4" fill="#0E0F12"/>
+  <text x="46" y="26" font-family="Georgia, serif" font-size="22" fill="#EDE9E0" letter-spacing="-0.4">Cambio</text>
+  <text x="132" y="26" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#B8955A">X</text>
+</svg>

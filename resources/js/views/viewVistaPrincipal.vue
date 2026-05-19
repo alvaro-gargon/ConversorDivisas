@@ -1,6 +1,12 @@
 <template>
   <div class="principal">
-    
+
+    <div class="simbolo">◈</div>
+    <h1 class="titulo">Cambio<em>X</em></h1>
+    <p class="subtitulo">Conversor de divisas</p>
+
+    <div class="divisor"></div>
+
     <nav class="nav-principal">
       <button class="botonNav" @click="$router.push('/conversor')">
         <span class="iconoBoton">⇄</span>
@@ -41,6 +47,42 @@
   justify-content: center;
   padding: 2rem;
   font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.simbolo {
+  font-size: 28px;
+  color: #B8955A;
+  letter-spacing: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 3.2rem);
+  font-weight: 400;
+  color: #EDE9E0;
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.02em;
+}
+.titulo em {
+  font-style: italic;
+  color: #B8955A;
+}
+
+.subtitulo {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5A5856;
+  margin: 0 0 2rem;
+}
+
+.divisor {
+  width: 36px;
+  height: 1px;
+  background: #B8955A;
+  opacity: 0.35;
+  margin-bottom: 2rem;
 }
 
 .nav-principal {

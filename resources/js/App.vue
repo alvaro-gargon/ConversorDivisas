@@ -1,12 +1,18 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Logo from '@/components/logo.vue'
+
+const enlace = "/images/logo/logo-lg.svg"
+const alt = "Logo app"
 </script>
 
 <template>
   <main>
     <header class="header-pagina-principal-vue">
       <div class="cajaLogo">
-        "imagen logo"
+        <button class="botonLogo" @click="$router.push('/home')">
+          <Logo :url="enlace" :texto="alt"></Logo>
+        </button>
       </div>
       <h1>Álvaro García González</h1>
       <div class="cajaInfo">
@@ -47,7 +53,7 @@ main {
 .header-pagina-principal-vue {
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
   background: #0E0F12;
   border-bottom: 1px solid #252629;
@@ -62,6 +68,16 @@ main {
   color: #EDE9E0;
   letter-spacing: -0.02em;
   margin: 0;
+  margin-right: 14%;
+}
+
+.botonLogo{
+  background: #0E0F12;
+  border: 0px;
+}
+
+.botonLogo:hover{
+  cursor: pointer;
 }
 
 .cajaLogo {
