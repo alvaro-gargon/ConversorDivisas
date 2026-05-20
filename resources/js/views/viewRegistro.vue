@@ -37,7 +37,18 @@ export default {
         setToken(data.token)
         this.$router.push('/home')
       } catch (e) {
-        this.error = e.response?.data?.message || 'Error al registrarse'
+        if (e.response?.status === 422) {
+          const errors = e.response.data.errors
+          this.error = Object.values(errors).flat().join(', ')
+        } else {
+          this.error = e.response?.data?.message || 'Error al registrarse'
+        }
+        // this.error = e.response?.data?.mensaje || 'Error al registrarse'
+        
+        // console.log('Status:', e.response?.status)
+        // console.log('Data:', e.response?.data)
+        // console.log('Error completo:', e)
+        // this.error = JSON.stringify(e.response?.data) || 'Error al registrarse'
       }
     }
   }
