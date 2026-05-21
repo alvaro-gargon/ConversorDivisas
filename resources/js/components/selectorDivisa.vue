@@ -88,7 +88,7 @@ export default {
       type: Array,
       default: () => []
     },
-    // Array de iso_codes favoritos del usuario — vendrá de Laravel cuando esté listo
+    // Array de iso_codes favoritos del usuario 
     favoritas: {
       type: Array,
       default: () => []
