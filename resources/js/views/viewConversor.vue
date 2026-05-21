@@ -11,40 +11,12 @@
 
       <div class="filaDivisas">
 
-        <!-- Divisa origen -->
-        <div class="cajaDivisa">
-          <label class="etiquetaCampo">Divisa origen</label>
-          <div class="selectorDivisa">
-            <div class="infoDivisa">
-              <span class="codigoDivisa">USD</span>
-              <span class="nombreDivisa">Dólar estadounidense</span>
-            </div>
-            <span class="flechaSelector">▾</span>
-          </div>
-          <div class="campoImporte">
-            <input class="inputImporte" type="number" value="1000" />
-            <span class="sufijoDivisa">USD</span>
-          </div>
-        </div>
+        <SelectorDivisa v-model="divisaOrigen"  :divisas="divisas" :favoritas="favoritas" />
 
         <!-- Botón intercambio -->
         <button class="botonIntercambio">⇅</button>
 
-        <!-- Divisa destino -->
-        <div class="cajaDivisa">
-          <label class="etiquetaCampo">Divisa destino</label>
-          <div class="selectorDivisa">
-            <div class="infoDivisa">
-              <span class="codigoDivisa">EUR</span>
-              <span class="nombreDivisa">Euro</span>
-            </div>
-            <span class="flechaSelector">▾</span>
-          </div>
-          <div class="campoImporte campoImporteResultado">
-            <span class="inputImporte resultadoImporte">924,10</span>
-            <span class="sufijoDivisa">EUR</span>
-          </div>
-        </div>
+        <SelectorDivisa v-model="divisaDestino" :divisas="divisas" :favoritas="favoritas" />
 
       </div>
 
@@ -63,7 +35,21 @@
   </div>
 </template>
 
-<script setup>
+<script>
+import divisasJson from '@/assets/divisas.json'
+import SelectorDivisa from '@/components/selectorDivisa.vue'
+
+export default {
+  components: { SelectorDivisa },
+  data() {
+    return {
+      divisaOrigen:  'USD',
+      divisaDestino: 'EUR',
+      favoritas:     [],
+      divisas:       divisasJson
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -123,103 +109,9 @@
 /* Fila divisas */
 .filaDivisas {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 12px;
   margin-bottom: 1.25rem;
-}
-
-.cajaDivisa {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.etiquetaCampo {
-  font-size: 11px;
-  color: #5A5856;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.selectorDivisa {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #0E0F12;
-  border: 1px solid #252629;
-  border-radius: 10px;
-  padding: 10px 12px;
-  cursor: pointer;
-  transition: border-color 0.2s;
-}
-.selectorDivisa:hover {
-  border-color: #B8955A;
-}
-
-.infoDivisa {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.codigoDivisa {
-  font-size: 14px;
-  font-weight: 500;
-  color: #EDE9E0;
-  line-height: 1.2;
-}
-.nombreDivisa {
-  font-size: 11px;
-  color: #5A5856;
-}
-.flechaSelector {
-  font-size: 12px;
-  color: #5A5856;
-}
-
-.campoImporte {
-  display: flex;
-  align-items: center;
-  background: #0E0F12;
-  border: 1px solid #252629;
-  border-radius: 10px;
-  padding: 10px 12px;
-  gap: 8px;
-  transition: border-color 0.2s;
-}
-.campoImporte:focus-within {
-  border-color: #B8955A;
-}
-
-.inputImporte {
-  flex: 1;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.3rem;
-  color: #EDE9E0;
-  letter-spacing: -0.02em;
-  width: 0;
-}
-input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
-
-.campoImporteResultado {
-  background: rgba(184,149,90,0.06);
-  border-color: rgba(184,149,90,0.25);
-}
-.resultadoImporte {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.3rem;
-  color: #B8955A;
-  letter-spacing: -0.02em;
-  flex: 1;
-}
-
-.sufijoDivisa {
-  font-size: 12px;
-  color: #5A5856;
-  letter-spacing: 0.04em;
 }
 
 /* Botón intercambio */
@@ -236,7 +128,6 @@ input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-bottom: 8px;
   transition: border-color 0.2s, background 0.2s;
 }
 .botonIntercambio:hover {
