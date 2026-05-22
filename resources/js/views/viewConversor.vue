@@ -13,7 +13,7 @@
 
         <div class="cajaInputDivisa">
           <label class="etiquetaCampo">Divisa origen</label>
-          <SelectorDivisa v-model="divisaOrigen" :divisas="divisas" :favoritas="favoritas" />
+          <SelectorDivisa v-model="divisaOrigen" :divisas="divisas" :favoritas="favoritos" />
           <div class="campoValor">
             <span class="valorDivisa">1</span>
             <span class="sufijoDivisa">{{ divisaOrigen }}</span>
@@ -24,7 +24,7 @@
 
         <div class="cajaInputDivisa">
           <label class="etiquetaCampo">Divisa destino</label>
-          <SelectorDivisa v-model="divisaDestino" :divisas="divisas" :favoritas="favoritas" />
+          <SelectorDivisa v-model="divisaDestino" :divisas="divisas" :favoritas="favoritos" />
           <div class="campoValor campoValorResultado">
             <span class="valorDivisa valorResultado">
               {{ tipoCambio !== null ? tipoCambio : '—' }}
@@ -73,12 +73,25 @@ export default {
       fechaCambio:   null,
       cargando:      false,
       error:         null,
-      favoritas:     [],
       divisas:       divisasJson,
+      favoritos:     [],
     }
   },
 
+  mounted() {
+    this.cargarFavoritos()
+  },
+
   methods: {
+    async cargarFavoritos() {
+      try {
+        const { data } = await axios.get('/api/favoritos')
+        this.favoritos = data
+      } catch (e) {
+        console.error('Error cargando favoritos:', e)
+      }
+    },
+
     async convertir() {
       this.error    = null
       this.cargando = true
