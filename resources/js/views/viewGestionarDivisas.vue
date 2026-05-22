@@ -9,72 +9,122 @@
 
     <div class="barraBusqueda">
       <span class="iconoBusqueda">⌕</span>
-      <input class="inputBusqueda" type="text" placeholder="Buscar divisa..." />
+      <input
+        class="inputBusqueda"
+        type="text"
+        placeholder="Buscar divisa..."
+        v-model="textoBusqueda"
+      />
     </div>
 
     <div class="filtroPestanas">
-      <button class="pestana pestanaActiva">Todas</button>
-      <button class="pestana">Favoritas</button>
+      <button
+        class="pestana"
+        :class="{ pestanaActiva: pestanaSeleccionada === 'todas' }"
+        @click="pestanaSeleccionada = 'todas'"
+      >Todas</button>
+      <button
+        class="pestana"
+        :class="{ pestanaActiva: pestanaSeleccionada === 'favoritas' }"
+        @click="pestanaSeleccionada = 'favoritas'"
+      >Favoritas</button>
     </div>
 
     <ul class="listaDivisas">
       <li
-        v-for="divisa in divisas"
-        :key="divisa.codigo"
+        v-for="divisa in divisasMostradas"
+        :key="divisa.iso_code"
         class="itemDivisa"
-        :class="{ itemDivisaFavorita: divisa.favorita }"
+        :class="{ itemDivisaFavorita: esFavorita(divisa.iso_code) }"
       >
-        <div class="codigoBadge">{{ divisa.codigo }}</div>
+        <div class="codigoBadge">{{ divisa.iso_code }}</div>
         <div class="infoDivisaItem">
-          <span class="nombreDivisa">{{ divisa.nombre }}</span>
-          <span class="codigoDivisa">{{ divisa.codigo }}</span>
+          <span class="nombreDivisa">{{ divisa.name }}</span>
+          <span class="codigoDivisa">{{ divisa.iso_code }}</span>
         </div>
-        <button class="botonFavorito" :class="{ botonFavoritoActivo: divisa.favorita }">
-          {{ divisa.favorita ? '★' : '☆' }}
+        <button
+          class="botonFavorito"
+          :class="{ botonFavoritoActivo: esFavorita(divisa.iso_code) }"
+          @click="toggleFavorito(divisa.iso_code)"
+        >
+          {{ esFavorita(divisa.iso_code) ? '★' : '☆' }}
         </button>
+      </li>
+
+      <li v-if="divisasMostradas.length === 0" class="itemSinResultados">
+        No hay divisas que coincidan con "{{ textoBusqueda }}"
       </li>
     </ul>
 
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script>
+import axios from 'axios'
+import divisasJson from '@/assets/divisas.json'
 
-// Divisas reales de la API de Frankfurter (https://api.frankfurter.app/currencies)
-const divisas = ref([
-  { codigo: 'AUD', nombre: 'Dólar australiano',       favorita: false },
-  { codigo: 'BGN', nombre: 'Lev búlgaro',              favorita: false },
-  { codigo: 'BRL', nombre: 'Real brasileño',           favorita: true  },
-  { codigo: 'CAD', nombre: 'Dólar canadiense',         favorita: true  },
-  { codigo: 'CHF', nombre: 'Franco suizo',             favorita: true  },
-  { codigo: 'CNY', nombre: 'Yuan chino',               favorita: false },
-  { codigo: 'CZK', nombre: 'Corona checa',             favorita: false },
-  { codigo: 'DKK', nombre: 'Corona danesa',            favorita: false },
-  { codigo: 'EUR', nombre: 'Euro',                     favorita: true  },
-  { codigo: 'GBP', nombre: 'Libra esterlina',          favorita: true  },
-  { codigo: 'HKD', nombre: 'Dólar de Hong Kong',       favorita: false },
-  { codigo: 'HUF', nombre: 'Forinto húngaro',          favorita: false },
-  { codigo: 'IDR', nombre: 'Rupia indonesia',          favorita: false },
-  { codigo: 'ILS', nombre: 'Séquel israelí',           favorita: false },
-  { codigo: 'INR', nombre: 'Rupia india',              favorita: false },
-  { codigo: 'ISK', nombre: 'Corona islandesa',         favorita: false },
-  { codigo: 'JPY', nombre: 'Yen japonés',              favorita: true  },
-  { codigo: 'KRW', nombre: 'Won surcoreano',           favorita: false },
-  { codigo: 'MXN', nombre: 'Peso mexicano',            favorita: false },
-  { codigo: 'MYR', nombre: 'Ringgit malayo',           favorita: false },
-  { codigo: 'NOK', nombre: 'Corona noruega',           favorita: false },
-  { codigo: 'NZD', nombre: 'Dólar neozelandés',        favorita: false },
-  { codigo: 'PHP', nombre: 'Peso filipino',            favorita: false },
-  { codigo: 'PLN', nombre: 'Esloti polaco',            favorita: false },
-  { codigo: 'RON', nombre: 'Leu rumano',               favorita: false },
-  { codigo: 'SEK', nombre: 'Corona sueca',             favorita: false },
-  { codigo: 'SGD', nombre: 'Dólar de Singapur',        favorita: false },
-  { codigo: 'THB', nombre: 'Baht tailandés',           favorita: false },
-  { codigo: 'TRY', nombre: 'Lira turca',               favorita: false },
-  { codigo: 'USD', nombre: 'Dólar estadounidense',     favorita: true  },
-  { codigo: 'ZAR', nombre: 'Rand sudafricano',         favorita: false },
-])
+export default {
+  name: 'vistaDivisas',
+
+  data() {
+    return {
+      divisas:             divisasJson,
+      favoritos:           [],   // array de iso_codes: ['EUR', 'USD', ...]
+      textoBusqueda:       '',
+      pestanaSeleccionada: 'todas',
+    }
+  },
+
+  computed: {
+    divisasFiltradas() {
+      const texto = this.textoBusqueda.toLowerCase()
+      return this.divisas.filter(d =>
+        d.iso_code.toLowerCase().includes(texto) ||
+        d.name.toLowerCase().includes(texto)
+      )
+    },
+
+    divisasMostradas() {
+      if (this.pestanaSeleccionada === 'favoritas') {
+        return this.divisasFiltradas.filter(d => this.esFavorita(d.iso_code))
+      }
+      return this.divisasFiltradas
+    }
+  },
+
+  mounted() {
+    this.cargarFavoritos()
+  },
+
+  methods: {
+    esFavorita(isoCode) {
+      return this.favoritos.includes(isoCode)
+    },
+
+    async cargarFavoritos() {
+      try {
+        const { data } = await axios.get('/api/favoritos')
+        this.favoritos = data
+      } catch (e) {
+        console.error('Error cargando favoritos:', e)
+      }
+    },
+
+    async toggleFavorito(isoCode) {
+      try {
+        if (this.esFavorita(isoCode)) {
+          await axios.delete(`/api/favoritos/${isoCode}`)
+          this.favoritos = this.favoritos.filter(f => f !== isoCode)
+        } else {
+          await axios.post('/api/favoritos', { id_divisa: isoCode })
+          this.favoritos.push(isoCode)
+        }
+      } catch (e) {
+        console.error('Error actualizando favorito:', e)
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -90,7 +140,6 @@ const divisas = ref([
   font-family: 'DM Sans', system-ui, sans-serif;
 }
 
-/* Cabecera */
 .cabeceraDivisas {
   text-align: center;
   margin-bottom: 2rem;
@@ -121,7 +170,6 @@ const divisas = ref([
   text-transform: uppercase;
 }
 
-/* Barra búsqueda */
 .barraBusqueda {
   width: 100%;
   max-width: 520px;
@@ -155,7 +203,6 @@ const divisas = ref([
   color: #3A3B40;
 }
 
-/* Filtro pestañas */
 .filtroPestanas {
   width: 100%;
   max-width: 520px;
@@ -184,7 +231,6 @@ const divisas = ref([
   color: #B8955A;
 }
 
-/* Lista */
 .listaDivisas {
   width: 100%;
   max-width: 520px;
@@ -271,5 +317,12 @@ const divisas = ref([
 }
 .botonFavoritoActivo {
   color: #B8955A;
+}
+
+.itemSinResultados {
+  font-size: 13px;
+  color: #3A3B40;
+  text-align: center;
+  padding: 2rem;
 }
 </style>
