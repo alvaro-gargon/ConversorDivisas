@@ -58,12 +58,21 @@
     "isDynamicEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-NOTwbGK3.css",
+    "file": "assets/app-D1BD-nwt.css",
     "name": "app",
     "names": [
       "app.css"
     ],
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/estilos.css": {
+    "file": "assets/estilos-Dh5GsMXz.css",
+    "name": "estilos",
+    "names": [
+      "estilos.css"
+    ],
+    "src": "resources/css/estilos.css",
     "isEntry": true
   },
   "resources/js/main.js": {
