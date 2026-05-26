@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
 /*Metodo añadido para controlar el movimiento entre paginas sin que ocurra errores.

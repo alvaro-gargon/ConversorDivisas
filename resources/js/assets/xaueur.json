@@ -1,0 +1,1906 @@
+[
+  {
+    "fecha": "2006-08-01",
+    "precio": 489.44,
+    "apertura": 496.79,
+    "maximo": 512.85,
+    "minimo": 473.77,
+    "cambio": "-1.54"
+  },
+  {
+    "fecha": "2006-09-01",
+    "precio": 472.14,
+    "apertura": 488.05,
+    "maximo": 500.17,
+    "minimo": 449.62,
+    "cambio": "-3.53"
+  },
+  {
+    "fecha": "2006-10-01",
+    "precio": 475.2,
+    "apertura": 471.34,
+    "maximo": 480.5,
+    "minimo": 440.65,
+    "cambio": "0.65"
+  },
+  {
+    "fecha": "2006-11-01",
+    "precio": 489.76,
+    "apertura": 474.77,
+    "maximo": 495.67,
+    "minimo": 474.0,
+    "cambio": "3.06"
+  },
+  {
+    "fecha": "2006-12-01",
+    "precio": 482.39,
+    "apertura": 488.98,
+    "maximo": 489.76,
+    "minimo": 467.11,
+    "cambio": "-1.50"
+  },
+  {
+    "fecha": "2007-01-01",
+    "precio": 501.02,
+    "apertura": 482.08,
+    "maximo": 504.25,
+    "minimo": 462.92,
+    "cambio": "3.86"
+  },
+  {
+    "fecha": "2007-02-01",
+    "precio": 506.18,
+    "apertura": 500.58,
+    "maximo": 522.88,
+    "minimo": 495.65,
+    "cambio": "1.03"
+  },
+  {
+    "fecha": "2007-03-01",
+    "precio": 496.79,
+    "apertura": 505.82,
+    "maximo": 512.39,
+    "minimo": 480.56,
+    "cambio": "-1.86"
+  },
+  {
+    "fecha": "2007-04-01",
+    "precio": 497.01,
+    "apertura": 495.74,
+    "maximo": 511.33,
+    "minimo": 490.62,
+    "cambio": "0.04"
+  },
+  {
+    "fecha": "2007-05-01",
+    "precio": 491.25,
+    "apertura": 498.79,
+    "maximo": 508.93,
+    "minimo": 484.18,
+    "cambio": "-1.16"
+  },
+  {
+    "fecha": "2007-06-01",
+    "precio": 479.97,
+    "apertura": 491.3,
+    "maximo": 500.5,
+    "minimo": 474.67,
+    "cambio": "-2.30"
+  },
+  {
+    "fecha": "2007-07-01",
+    "precio": 485.18,
+    "apertura": 479.07,
+    "maximo": 496.62,
+    "minimo": 474.75,
+    "cambio": "1.09"
+  },
+  {
+    "fecha": "2007-08-01",
+    "precio": 493.76,
+    "apertura": 484.72,
+    "maximo": 498.73,
+    "minimo": 478.29,
+    "cambio": "1.77"
+  },
+  {
+    "fecha": "2007-09-01",
+    "precio": 521.37,
+    "apertura": 493.87,
+    "maximo": 525.36,
+    "minimo": 491.94,
+    "cambio": "5.59"
+  },
+  {
+    "fecha": "2007-10-01",
+    "precio": 549.78,
+    "apertura": 520.8,
+    "maximo": 551.22,
+    "minimo": 511.82,
+    "cambio": "5.45"
+  },
+  {
+    "fecha": "2007-11-01",
+    "precio": 535.26,
+    "apertura": 549.13,
+    "maximo": 576.33,
+    "minimo": 527.19,
+    "cambio": "-2.64"
+  },
+  {
+    "fecha": "2007-12-01",
+    "precio": 571.35,
+    "apertura": 535.49,
+    "maximo": 572.95,
+    "minimo": 530.41,
+    "cambio": "6.74"
+  },
+  {
+    "fecha": "2008-01-01",
+    "precio": 622.77,
+    "apertura": 571.19,
+    "maximo": 632.0,
+    "minimo": 569.58,
+    "cambio": "9.00"
+  },
+  {
+    "fecha": "2008-02-01",
+    "precio": 640.56,
+    "apertura": 622.43,
+    "maximo": 644.08,
+    "minimo": 601.94,
+    "cambio": "2.86"
+  },
+  {
+    "fecha": "2008-03-01",
+    "precio": 580.61,
+    "apertura": 640.72,
+    "maximo": 651.85,
+    "minimo": 579.47,
+    "cambio": "-9.36"
+  },
+  {
+    "fecha": "2008-04-01",
+    "precio": 557.62,
+    "apertura": 581.38,
+    "maximo": 597.9,
+    "minimo": 554.67,
+    "cambio": "-3.96"
+  },
+  {
+    "fecha": "2008-05-01",
+    "precio": 570.23,
+    "apertura": 560.05,
+    "maximo": 593.03,
+    "minimo": 549.01,
+    "cambio": "2.26"
+  },
+  {
+    "fecha": "2008-06-01",
+    "precio": 587.22,
+    "apertura": 569.99,
+    "maximo": 592.6,
+    "minimo": 557.07,
+    "cambio": "2.98"
+  },
+  {
+    "fecha": "2008-07-01",
+    "precio": 585.8,
+    "apertura": 586.96,
+    "maximo": 618.4,
+    "minimo": 575.78,
+    "cambio": "-0.24"
+  },
+  {
+    "fecha": "2008-08-01",
+    "precio": 566.17,
+    "apertura": 585.88,
+    "maximo": 589.31,
+    "minimo": 526.72,
+    "cambio": "-3.35"
+  },
+  {
+    "fecha": "2008-09-01",
+    "precio": 617.79,
+    "apertura": 565.85,
+    "maximo": 637.52,
+    "minimo": 530.39,
+    "cambio": "9.12"
+  },
+  {
+    "fecha": "2008-10-01",
+    "precio": 569.42,
+    "apertura": 617.42,
+    "maximo": 687.08,
+    "minimo": 544.72,
+    "cambio": "-7.83"
+  },
+  {
+    "fecha": "2008-11-01",
+    "precio": 643.75,
+    "apertura": 568.78,
+    "maximo": 649.48,
+    "minimo": 563.1,
+    "cambio": "13.05"
+  },
+  {
+    "fecha": "2008-12-01",
+    "precio": 629.23,
+    "apertura": 640.99,
+    "maximo": 646.03,
+    "minimo": 587.21,
+    "cambio": "-2.26"
+  },
+  {
+    "fecha": "2009-01-01",
+    "precio": 725.44,
+    "apertura": 630.56,
+    "maximo": 726.26,
+    "minimo": 609.49,
+    "cambio": "15.29"
+  },
+  {
+    "fecha": "2009-02-01",
+    "precio": 746.14,
+    "apertura": 726.68,
+    "maximo": 794.34,
+    "minimo": 674.34,
+    "cambio": "2.85"
+  },
+  {
+    "fecha": "2009-03-01",
+    "precio": 693.1,
+    "apertura": 745.21,
+    "maximo": 763.31,
+    "minimo": 672.46,
+    "cambio": "-7.11"
+  },
+  {
+    "fecha": "2009-04-01",
+    "precio": 670.2,
+    "apertura": 693.02,
+    "maximo": 703.87,
+    "minimo": 644.49,
+    "cambio": "-3.30"
+  },
+  {
+    "fecha": "2009-05-01",
+    "precio": 692.38,
+    "apertura": 670.26,
+    "maximo": 695.46,
+    "minimo": 662.64,
+    "cambio": "3.31"
+  },
+  {
+    "fecha": "2009-06-01",
+    "precio": 660.38,
+    "apertura": 693.24,
+    "maximo": 697.97,
+    "minimo": 652.55,
+    "cambio": "-4.62"
+  },
+  {
+    "fecha": "2009-07-01",
+    "precio": 670.0,
+    "apertura": 660.47,
+    "maximo": 672.94,
+    "minimo": 650.05,
+    "cambio": "1.46"
+  },
+  {
+    "fecha": "2009-08-01",
+    "precio": 663.75,
+    "apertura": 669.55,
+    "maximo": 678.79,
+    "minimo": 656.53,
+    "cambio": "-0.93"
+  },
+  {
+    "fecha": "2009-09-01",
+    "precio": 688.72,
+    "apertura": 663.36,
+    "maximo": 699.56,
+    "minimo": 662.29,
+    "cambio": "3.76"
+  },
+  {
+    "fecha": "2009-10-01",
+    "precio": 709.95,
+    "apertura": 688.16,
+    "maximo": 720.71,
+    "minimo": 680.65,
+    "cambio": "3.08"
+  },
+  {
+    "fecha": "2009-11-01",
+    "precio": 785.5,
+    "apertura": 710.04,
+    "maximo": 796.41,
+    "minimo": 705.33,
+    "cambio": "10.64"
+  },
+  {
+    "fecha": "2009-12-01",
+    "precio": 765.93,
+    "apertura": 785.97,
+    "maximo": 812.86,
+    "minimo": 755.3,
+    "cambio": "-2.49"
+  },
+  {
+    "fecha": "2010-01-01",
+    "precio": 780.0,
+    "apertura": 765.58,
+    "maximo": 802.29,
+    "minimo": 764.53,
+    "cambio": "1.84"
+  },
+  {
+    "fecha": "2010-02-01",
+    "precio": 819.23,
+    "apertura": 778.36,
+    "maximo": 830.81,
+    "minimo": 767.04,
+    "cambio": "5.03"
+  },
+  {
+    "fecha": "2010-03-01",
+    "precio": 824.34,
+    "apertura": 818.99,
+    "maximo": 838.65,
+    "minimo": 798.59,
+    "cambio": "0.62"
+  },
+  {
+    "fecha": "2010-04-01",
+    "precio": 886.79,
+    "apertura": 823.56,
+    "maximo": 894.41,
+    "minimo": 822.03,
+    "cambio": "7.58"
+  },
+  {
+    "fecha": "2010-05-01",
+    "precio": 988.39,
+    "apertura": 882.43,
+    "maximo": 1013.47,
+    "minimo": 883.27,
+    "cambio": "11.46"
+  },
+  {
+    "fecha": "2010-06-01",
+    "precio": 1015.41,
+    "apertura": 986.67,
+    "maximo": 1051.31,
+    "minimo": 983.53,
+    "cambio": "2.73"
+  },
+  {
+    "fecha": "2010-07-01",
+    "precio": 905.04,
+    "apertura": 1014.59,
+    "maximo": 1017.92,
+    "minimo": 885.81,
+    "cambio": "-10.87"
+  },
+  {
+    "fecha": "2010-08-01",
+    "precio": 983.72,
+    "apertura": 904.46,
+    "maximo": 985.95,
+    "minimo": 891.61,
+    "cambio": "8.69"
+  },
+  {
+    "fecha": "2010-09-01",
+    "precio": 960.33,
+    "apertura": 984.39,
+    "maximo": 995.28,
+    "minimo": 953.51,
+    "cambio": "-2.38"
+  },
+  {
+    "fecha": "2010-10-01",
+    "precio": 974.59,
+    "apertura": 957.56,
+    "maximo": 985.81,
+    "minimo": 945.75,
+    "cambio": "1.49"
+  },
+  {
+    "fecha": "2010-11-01",
+    "precio": 1066.49,
+    "apertura": 971.82,
+    "maximo": 1068.51,
+    "minimo": 944.69,
+    "cambio": "9.43"
+  },
+  {
+    "fecha": "2010-12-01",
+    "precio": 1061.85,
+    "apertura": 1066.32,
+    "maximo": 1076.3,
+    "minimo": 1029.03,
+    "cambio": "-0.43"
+  },
+  {
+    "fecha": "2011-01-01",
+    "precio": 973.34,
+    "apertura": 1063.26,
+    "maximo": 1070.61,
+    "minimo": 953.27,
+    "cambio": "-8.34"
+  },
+  {
+    "fecha": "2011-02-01",
+    "precio": 1022.67,
+    "apertura": 972.9,
+    "maximo": 1036.69,
+    "minimo": 960.51,
+    "cambio": "5.07"
+  },
+  {
+    "fecha": "2011-03-01",
+    "precio": 1012.62,
+    "apertura": 1022.06,
+    "maximo": 1042.24,
+    "minimo": 994.47,
+    "cambio": "-0.98"
+  },
+  {
+    "fecha": "2011-04-01",
+    "precio": 1055.48,
+    "apertura": 1013.46,
+    "maximo": 1058.15,
+    "minimo": 997.34,
+    "cambio": "4.23"
+  },
+  {
+    "fecha": "2011-05-01",
+    "precio": 1065.49,
+    "apertura": 1054.45,
+    "maximo": 1088.63,
+    "minimo": 1006.2,
+    "cambio": "0.95"
+  },
+  {
+    "fecha": "2011-06-01",
+    "precio": 1033.99,
+    "apertura": 1065.88,
+    "maximo": 1087.44,
+    "minimo": 1032.88,
+    "cambio": "-2.96"
+  },
+  {
+    "fecha": "2011-07-01",
+    "precio": 1129.5,
+    "apertura": 1034.06,
+    "maximo": 1145.64,
+    "minimo": 1020.93,
+    "cambio": "9.24"
+  },
+  {
+    "fecha": "2011-08-01",
+    "precio": 1267.77,
+    "apertura": 1132.72,
+    "maximo": 1331.69,
+    "minimo": 1117.71,
+    "cambio": "12.24"
+  },
+  {
+    "fecha": "2011-09-01",
+    "precio": 1212.47,
+    "apertura": 1267.94,
+    "maximo": 1374.94,
+    "minimo": 1146.86,
+    "cambio": "-4.36"
+  },
+  {
+    "fecha": "2011-10-01",
+    "precio": 1237.09,
+    "apertura": 1216.7,
+    "maximo": 1270.54,
+    "minimo": 1169.29,
+    "cambio": "2.03"
+  },
+  {
+    "fecha": "2011-11-01",
+    "precio": 1298.15,
+    "apertura": 1236.62,
+    "maximo": 1322.21,
+    "minimo": 1230.04,
+    "cambio": "4.94"
+  },
+  {
+    "fecha": "2011-12-01",
+    "precio": 1207.75,
+    "apertura": 1299.31,
+    "maximo": 1308.32,
+    "minimo": 1181.46,
+    "cambio": "-6.96"
+  },
+  {
+    "fecha": "2012-01-01",
+    "precio": 1329.43,
+    "apertura": 1212.3,
+    "maximo": 1331.36,
+    "minimo": 1204.99,
+    "cambio": "10.07"
+  },
+  {
+    "fecha": "2012-02-01",
+    "precio": 1271.19,
+    "apertura": 1328.37,
+    "maximo": 1344.7,
+    "minimo": 1267.16,
+    "cambio": "-4.38"
+  },
+  {
+    "fecha": "2012-03-01",
+    "precio": 1250.12,
+    "apertura": 1272.03,
+    "maximo": 1308.07,
+    "minimo": 1237.52,
+    "cambio": "-1.66"
+  },
+  {
+    "fecha": "2012-04-01",
+    "precio": 1256.52,
+    "apertura": 1259.01,
+    "maximo": 1277.3,
+    "minimo": 1227.92,
+    "cambio": "0.51"
+  },
+  {
+    "fecha": "2012-05-01",
+    "precio": 1261.08,
+    "apertura": 1256.38,
+    "maximo": 1270.11,
+    "minimo": 1203.07,
+    "cambio": "0.36"
+  },
+  {
+    "fecha": "2012-06-01",
+    "precio": 1262.2,
+    "apertura": 1264.22,
+    "maximo": 1315.42,
+    "minimo": 1238.57,
+    "cambio": "0.09"
+  },
+  {
+    "fecha": "2012-07-01",
+    "precio": 1311.62,
+    "apertura": 1259.85,
+    "maximo": 1326.14,
+    "minimo": 1257.87,
+    "cambio": "3.92"
+  },
+  {
+    "fecha": "2012-08-01",
+    "precio": 1343.62,
+    "apertura": 1315.47,
+    "maximo": 1346.18,
+    "minimo": 1290.14,
+    "cambio": "2.44"
+  },
+  {
+    "fecha": "2012-09-01",
+    "precio": 1377.41,
+    "apertura": 1344.23,
+    "maximo": 1381.63,
+    "minimo": 1330.84,
+    "cambio": "2.51"
+  },
+  {
+    "fecha": "2012-10-01",
+    "precio": 1326.9,
+    "apertura": 1379.62,
+    "maximo": 1386.88,
+    "minimo": 1310.74,
+    "cambio": "-3.67"
+  },
+  {
+    "fecha": "2012-11-01",
+    "precio": 1318.37,
+    "apertura": 1327.79,
+    "maximo": 1367.93,
+    "minimo": 1303.62,
+    "cambio": "-0.64"
+  },
+  {
+    "fecha": "2012-12-01",
+    "precio": 1268.07,
+    "apertura": 1321.16,
+    "maximo": 1328.11,
+    "minimo": 1236.67,
+    "cambio": "-3.82"
+  },
+  {
+    "fecha": "2013-01-01",
+    "precio": 1224.41,
+    "apertura": 1269.86,
+    "maximo": 1286.33,
+    "minimo": 1220.44,
+    "cambio": "-3.44"
+  },
+  {
+    "fecha": "2013-02-01",
+    "precio": 1208.62,
+    "apertura": 1225.22,
+    "maximo": 1258.96,
+    "minimo": 1171.28,
+    "cambio": "-1.29"
+  },
+  {
+    "fecha": "2013-03-01",
+    "precio": 1245.8,
+    "apertura": 1209.58,
+    "maximo": 1260.67,
+    "minimo": 1198.12,
+    "cambio": "3.08"
+  },
+  {
+    "fecha": "2013-04-01",
+    "precio": 1120.96,
+    "apertura": 1251.95,
+    "maximo": 1252.79,
+    "minimo": 1013.02,
+    "cambio": "-10.02"
+  },
+  {
+    "fecha": "2013-05-01",
+    "precio": 1066.38,
+    "apertura": 1121.95,
+    "maximo": 1134.1,
+    "minimo": 1043.34,
+    "cambio": "-4.87"
+  },
+  {
+    "fecha": "2013-06-01",
+    "precio": 947.69,
+    "apertura": 1067.71,
+    "maximo": 1082.61,
+    "minimo": 906.2,
+    "cambio": "-11.13"
+  },
+  {
+    "fecha": "2013-07-01",
+    "precio": 993.72,
+    "apertura": 949.16,
+    "maximo": 1019.78,
+    "minimo": 941.08,
+    "cambio": "4.86"
+  },
+  {
+    "fecha": "2013-08-01",
+    "precio": 1055.5,
+    "apertura": 994.82,
+    "maximo": 1071.99,
+    "minimo": 957.59,
+    "cambio": "6.22"
+  },
+  {
+    "fecha": "2013-09-01",
+    "precio": 981.11,
+    "apertura": 1056.33,
+    "maximo": 1075.35,
+    "minimo": 967.74,
+    "cambio": "-7.05"
+  },
+  {
+    "fecha": "2013-10-01",
+    "precio": 973.71,
+    "apertura": 981.73,
+    "maximo": 987.95,
+    "minimo": 926.93,
+    "cambio": "-0.75"
+  },
+  {
+    "fecha": "2013-11-01",
+    "precio": 921.53,
+    "apertura": 974.49,
+    "maximo": 991.91,
+    "minimo": 907.72,
+    "cambio": "-5.36"
+  },
+  {
+    "fecha": "2013-12-01",
+    "precio": 876.24,
+    "apertura": 921.83,
+    "maximo": 921.97,
+    "minimo": 859.35,
+    "cambio": "-4.91"
+  },
+  {
+    "fecha": "2014-01-01",
+    "precio": 921.89,
+    "apertura": 876.51,
+    "maximo": 933.89,
+    "minimo": 874.16,
+    "cambio": "5.21"
+  },
+  {
+    "fecha": "2014-02-01",
+    "precio": 959.41,
+    "apertura": 923.33,
+    "maximo": 979.22,
+    "minimo": 919.83,
+    "cambio": "4.07"
+  },
+  {
+    "fecha": "2014-03-01",
+    "precio": 931.88,
+    "apertura": 964.61,
+    "maximo": 1001.22,
+    "minimo": 930.57,
+    "cambio": "-2.87"
+  },
+  {
+    "fecha": "2014-04-01",
+    "precio": 930.93,
+    "apertura": 932.49,
+    "maximo": 963.72,
+    "minimo": 917.76,
+    "cambio": "-0.10"
+  },
+  {
+    "fecha": "2014-05-01",
+    "precio": 916.45,
+    "apertura": 931.35,
+    "maximo": 956.59,
+    "minimo": 910.47,
+    "cambio": "-1.56"
+  },
+  {
+    "fecha": "2014-06-01",
+    "precio": 969.11,
+    "apertura": 917.47,
+    "maximo": 973.66,
+    "minimo": 910.34,
+    "cambio": "5.75"
+  },
+  {
+    "fecha": "2014-07-01",
+    "precio": 957.65,
+    "apertura": 969.36,
+    "maximo": 988.7,
+    "minimo": 952.31,
+    "cambio": "-1.18"
+  },
+  {
+    "fecha": "2014-08-01",
+    "precio": 979.88,
+    "apertura": 957.97,
+    "maximo": 988.84,
+    "minimo": 955.96,
+    "cambio": "2.32"
+  },
+  {
+    "fecha": "2014-09-01",
+    "precio": 956.11,
+    "apertura": 980.09,
+    "maximo": 983.1,
+    "minimo": 940.84,
+    "cambio": "-2.43"
+  },
+  {
+    "fecha": "2014-10-01",
+    "precio": 936.45,
+    "apertura": 956.46,
+    "maximo": 985.4,
+    "minimo": 925.74,
+    "cambio": "-2.06"
+  },
+  {
+    "fecha": "2014-11-01",
+    "precio": 937.08,
+    "apertura": 938.02,
+    "maximo": 973.7,
+    "minimo": 911.43,
+    "cambio": "0.07"
+  },
+  {
+    "fecha": "2014-12-01",
+    "precio": 978.26,
+    "apertura": 937.92,
+    "maximo": 999.59,
+    "minimo": 919.2,
+    "cambio": "4.39"
+  },
+  {
+    "fecha": "2015-01-01",
+    "precio": 1136.73,
+    "apertura": 978.72,
+    "maximo": 1168.39,
+    "minimo": 971.09,
+    "cambio": "16.20"
+  },
+  {
+    "fecha": "2015-02-01",
+    "precio": 1083.05,
+    "apertura": 1137.56,
+    "maximo": 1138.01,
+    "minimo": 1050.02,
+    "cambio": "-4.72"
+  },
+  {
+    "fecha": "2015-03-01",
+    "precio": 1102.5,
+    "apertura": 1084.38,
+    "maximo": 1111.11,
+    "minimo": 1067.14,
+    "cambio": "1.80"
+  },
+  {
+    "fecha": "2015-04-01",
+    "precio": 1054.56,
+    "apertura": 1102.86,
+    "maximo": 1143.32,
+    "minimo": 1050.79,
+    "cambio": "-4.35"
+  },
+  {
+    "fecha": "2015-05-01",
+    "precio": 1082.63,
+    "apertura": 1054.3,
+    "maximo": 1102.99,
+    "minimo": 1038.13,
+    "cambio": "2.66"
+  },
+  {
+    "fecha": "2015-06-01",
+    "precio": 1051.52,
+    "apertura": 1083.6,
+    "maximo": 1102.58,
+    "minimo": 1037.09,
+    "cambio": "-2.87"
+  },
+  {
+    "fecha": "2015-07-01",
+    "precio": 996.81,
+    "apertura": 1051.53,
+    "maximo": 1068.17,
+    "minimo": 981.78,
+    "cambio": "-5.20"
+  },
+  {
+    "fecha": "2015-08-01",
+    "precio": 1011.45,
+    "apertura": 998.82,
+    "maximo": 1035.51,
+    "minimo": 979.27,
+    "cambio": "1.47"
+  },
+  {
+    "fecha": "2015-09-01",
+    "precio": 997.1,
+    "apertura": 1012.45,
+    "maximo": 1033.51,
+    "minimo": 971.43,
+    "cambio": "-1.42"
+  },
+  {
+    "fecha": "2015-10-01",
+    "precio": 1037.62,
+    "apertura": 997.59,
+    "maximo": 1069.48,
+    "minimo": 986.52,
+    "cambio": "4.06"
+  },
+  {
+    "fecha": "2015-11-01",
+    "precio": 1007.34,
+    "apertura": 1035.94,
+    "maximo": 1036.21,
+    "minimo": 995.07,
+    "cambio": "-2.92"
+  },
+  {
+    "fecha": "2015-12-01",
+    "precio": 976.25,
+    "apertura": 1007.53,
+    "maximo": 1015.39,
+    "minimo": 961.38,
+    "cambio": "-3.09"
+  },
+  {
+    "fecha": "2016-01-01",
+    "precio": 1031.13,
+    "apertura": 976.8,
+    "maximo": 1035.59,
+    "minimo": 974.64,
+    "cambio": "5.62"
+  },
+  {
+    "fecha": "2016-02-01",
+    "precio": 1138.67,
+    "apertura": 1032.07,
+    "maximo": 1141.41,
+    "minimo": 1023.58,
+    "cambio": "10.43"
+  },
+  {
+    "fecha": "2016-03-01",
+    "precio": 1082.37,
+    "apertura": 1139.35,
+    "maximo": 1164.72,
+    "minimo": 1078.78,
+    "cambio": "-4.94"
+  },
+  {
+    "fecha": "2016-04-01",
+    "precio": 1128.78,
+    "apertura": 1083.17,
+    "maximo": 1132.67,
+    "minimo": 1064.66,
+    "cambio": "4.29"
+  },
+  {
+    "fecha": "2016-05-01",
+    "precio": 1090.88,
+    "apertura": 1130.31,
+    "maximo": 1136.98,
+    "minimo": 1080.28,
+    "cambio": "-3.36"
+  },
+  {
+    "fecha": "2016-06-01",
+    "precio": 1190.04,
+    "apertura": 1091.67,
+    "maximo": 1244.94,
+    "minimo": 1080.26,
+    "cambio": "9.09"
+  },
+  {
+    "fecha": "2016-07-01",
+    "precio": 1208.38,
+    "apertura": 1190.56,
+    "maximo": 1244.78,
+    "minimo": 1185.06,
+    "cambio": "1.54"
+  },
+  {
+    "fecha": "2016-08-01",
+    "precio": 1172.22,
+    "apertura": 1208.65,
+    "maximo": 1225.77,
+    "minimo": 1167.64,
+    "cambio": "-2.99"
+  },
+  {
+    "fecha": "2016-09-01",
+    "precio": 1170.22,
+    "apertura": 1173.06,
+    "maximo": 1202.44,
+    "minimo": 1165.4,
+    "cambio": "-0.17"
+  },
+  {
+    "fecha": "2016-10-01",
+    "precio": 1162.96,
+    "apertura": 1171.19,
+    "maximo": 1175.09,
+    "minimo": 1113.06,
+    "cambio": "-0.62"
+  },
+  {
+    "fecha": "2016-11-01",
+    "precio": 1107.79,
+    "apertura": 1163.32,
+    "maximo": 1189.15,
+    "minimo": 1105.23,
+    "cambio": "-4.74"
+  },
+  {
+    "fecha": "2016-12-01",
+    "precio": 1094.65,
+    "apertura": 1108.21,
+    "maximo": 1130.76,
+    "minimo": 1078.06,
+    "cambio": "-1.19"
+  },
+  {
+    "fecha": "2017-01-01",
+    "precio": 1120.32,
+    "apertura": 1093.77,
+    "maximo": 1142.03,
+    "minimo": 1093.19,
+    "cambio": "2.35"
+  },
+  {
+    "fecha": "2017-02-01",
+    "precio": 1179.67,
+    "apertura": 1121.05,
+    "maximo": 1192.33,
+    "minimo": 1115.23,
+    "cambio": "5.30"
+  },
+  {
+    "fecha": "2017-03-01",
+    "precio": 1171.96,
+    "apertura": 1180.39,
+    "maximo": 1185.72,
+    "minimo": 1123.17,
+    "cambio": "-0.65"
+  },
+  {
+    "fecha": "2017-04-01",
+    "precio": 1163.09,
+    "apertura": 1171.73,
+    "maximo": 1221.42,
+    "minimo": 1152.4,
+    "cambio": "-0.76"
+  },
+  {
+    "fecha": "2017-05-01",
+    "precio": 1127.59,
+    "apertura": 1162.69,
+    "maximo": 1166.42,
+    "minimo": 1112.86,
+    "cambio": "-3.05"
+  },
+  {
+    "fecha": "2017-06-01",
+    "precio": 1086.01,
+    "apertura": 1128.29,
+    "maximo": 1152.35,
+    "minimo": 1085.95,
+    "cambio": "-3.69"
+  },
+  {
+    "fecha": "2017-07-01",
+    "precio": 1071.56,
+    "apertura": 1087.17,
+    "maximo": 1088.16,
+    "minimo": 1056.42,
+    "cambio": "-1.33"
+  },
+  {
+    "fecha": "2017-08-01",
+    "precio": 1109.47,
+    "apertura": 1072.07,
+    "maximo": 1112.69,
+    "minimo": 1061.89,
+    "cambio": "3.54"
+  },
+  {
+    "fecha": "2017-09-01",
+    "precio": 1082.48,
+    "apertura": 1110.05,
+    "maximo": 1128.07,
+    "minimo": 1079.89,
+    "cambio": "-2.43"
+  },
+  {
+    "fecha": "2017-10-01",
+    "precio": 1091.35,
+    "apertura": 1082.68,
+    "maximo": 1107.63,
+    "minimo": 1077.47,
+    "cambio": "0.82"
+  },
+  {
+    "fecha": "2017-11-01",
+    "precio": 1070.4,
+    "apertura": 1091.86,
+    "maximo": 1111.13,
+    "minimo": 1067.62,
+    "cambio": "-1.92"
+  },
+  {
+    "fecha": "2017-12-01",
+    "precio": 1085.38,
+    "apertura": 1070.92,
+    "maximo": 1088.18,
+    "minimo": 1052.44,
+    "cambio": "1.40"
+  },
+  {
+    "fecha": "2018-01-01",
+    "precio": 1082.43,
+    "apertura": 1085.27,
+    "maximo": 1105.32,
+    "minimo": 1075.45,
+    "cambio": "-0.27"
+  },
+  {
+    "fecha": "2018-02-01",
+    "precio": 1080.47,
+    "apertura": 1083.49,
+    "maximo": 1090.33,
+    "minimo": 1066.36,
+    "cambio": "-0.18"
+  },
+  {
+    "fecha": "2018-03-01",
+    "precio": 1074.33,
+    "apertura": 1080.99,
+    "maximo": 1093.43,
+    "minimo": 1064.22,
+    "cambio": "-0.57"
+  },
+  {
+    "fecha": "2018-04-01",
+    "precio": 1088.53,
+    "apertura": 1075.22,
+    "maximo": 1102.47,
+    "minimo": 1074.35,
+    "cambio": "1.32"
+  },
+  {
+    "fecha": "2018-05-01",
+    "precio": 1109.54,
+    "apertura": 1089.09,
+    "maximo": 1133.63,
+    "minimo": 1085.85,
+    "cambio": "1.93"
+  },
+  {
+    "fecha": "2018-06-01",
+    "precio": 1071.49,
+    "apertura": 1109.85,
+    "maximo": 1127.28,
+    "minimo": 1071.06,
+    "cambio": "-3.43"
+  },
+  {
+    "fecha": "2018-07-01",
+    "precio": 1046.37,
+    "apertura": 1075.49,
+    "maximo": 1080.96,
+    "minimo": 1036.11,
+    "cambio": "-2.34"
+  },
+  {
+    "fecha": "2018-08-01",
+    "precio": 1034.65,
+    "apertura": 1046.81,
+    "maximo": 1065.84,
+    "minimo": 1023.22,
+    "cambio": "-1.12"
+  },
+  {
+    "fecha": "2018-09-01",
+    "precio": 1026.43,
+    "apertura": 1035.78,
+    "maximo": 1039.45,
+    "minimo": 1011.67,
+    "cambio": "-0.79"
+  },
+  {
+    "fecha": "2018-10-01",
+    "precio": 1073.08,
+    "apertura": 1027.0,
+    "maximo": 1093.88,
+    "minimo": 1020.23,
+    "cambio": "4.54"
+  },
+  {
+    "fecha": "2018-11-01",
+    "precio": 1079.49,
+    "apertura": 1073.88,
+    "maximo": 1084.64,
+    "minimo": 1059.32,
+    "cambio": "0.60"
+  },
+  {
+    "fecha": "2018-12-01",
+    "precio": 1117.65,
+    "apertura": 1080.05,
+    "maximo": 1122.07,
+    "minimo": 1074.78,
+    "cambio": "3.54"
+  },
+  {
+    "fecha": "2019-01-01",
+    "precio": 1154.22,
+    "apertura": 1118.63,
+    "maximo": 1155.55,
+    "minimo": 1110.68,
+    "cambio": "3.27"
+  },
+  {
+    "fecha": "2019-02-01",
+    "precio": 1154.74,
+    "apertura": 1155.06,
+    "maximo": 1187.14,
+    "minimo": 1143.55,
+    "cambio": "0.05"
+  },
+  {
+    "fecha": "2019-03-01",
+    "precio": 1151.53,
+    "apertura": 1154.03,
+    "maximo": 1171.56,
+    "minimo": 1132.58,
+    "cambio": "-0.28"
+  },
+  {
+    "fecha": "2019-04-01",
+    "precio": 1144.21,
+    "apertura": 1151.85,
+    "maximo": 1162.92,
+    "minimo": 1124.65,
+    "cambio": "-0.64"
+  },
+  {
+    "fecha": "2019-05-01",
+    "precio": 1166.99,
+    "apertura": 1144.54,
+    "maximo": 1170.51,
+    "minimo": 1131.01,
+    "cambio": "1.99"
+  },
+  {
+    "fecha": "2019-06-01",
+    "precio": 1239.23,
+    "apertura": 1169.1,
+    "maximo": 1261.49,
+    "minimo": 1165.46,
+    "cambio": "6.19"
+  },
+  {
+    "fecha": "2019-07-01",
+    "precio": 1276.05,
+    "apertura": 1239.61,
+    "maximo": 1290.63,
+    "minimo": 1219.86,
+    "cambio": "2.97"
+  },
+  {
+    "fecha": "2019-08-01",
+    "precio": 1382.85,
+    "apertura": 1276.69,
+    "maximo": 1399.36,
+    "minimo": 1269.1,
+    "cambio": "8.37"
+  },
+  {
+    "fecha": "2019-09-01",
+    "precio": 1350.35,
+    "apertura": 1383.49,
+    "maximo": 1413.8,
+    "minimo": 1341.91,
+    "cambio": "-2.35"
+  },
+  {
+    "fecha": "2019-10-01",
+    "precio": 1356.25,
+    "apertura": 1350.82,
+    "maximo": 1381.56,
+    "minimo": 1328.02,
+    "cambio": "0.44"
+  },
+  {
+    "fecha": "2019-11-01",
+    "precio": 1330.59,
+    "apertura": 1356.68,
+    "maximo": 1357.98,
+    "minimo": 1312.3,
+    "cambio": "-1.89"
+  },
+  {
+    "fecha": "2019-12-01",
+    "precio": 1352.78,
+    "apertura": 1331.46,
+    "maximo": 1363.4,
+    "minimo": 1307.18,
+    "cambio": "1.67"
+  },
+  {
+    "fecha": "2020-01-01",
+    "precio": 1432.91,
+    "apertura": 1353.31,
+    "maximo": 1443.45,
+    "minimo": 1351.62,
+    "cambio": "5.92"
+  },
+  {
+    "fecha": "2020-02-01",
+    "precio": 1437.01,
+    "apertura": 1433.65,
+    "maximo": 1560.95,
+    "minimo": 1403.21,
+    "cambio": "0.29"
+  },
+  {
+    "fecha": "2020-03-01",
+    "precio": 1424.23,
+    "apertura": 1440.63,
+    "maximo": 1522.79,
+    "minimo": 1300.56,
+    "cambio": "-0.89"
+  },
+  {
+    "fecha": "2020-04-01",
+    "precio": 1538.32,
+    "apertura": 1430.03,
+    "maximo": 1614.6,
+    "minimo": 1419.53,
+    "cambio": "8.01"
+  },
+  {
+    "fecha": "2020-05-01",
+    "precio": 1558.12,
+    "apertura": 1539.82,
+    "maximo": 1634.29,
+    "minimo": 1522.12,
+    "cambio": "1.29"
+  },
+  {
+    "fecha": "2020-06-01",
+    "precio": 1584.41,
+    "apertura": 1557.52,
+    "maximo": 1589.35,
+    "minimo": 1477.17,
+    "cambio": "1.69"
+  },
+  {
+    "fecha": "2020-07-01",
+    "precio": 1676.43,
+    "apertura": 1585.48,
+    "maximo": 1683.08,
+    "minimo": 1553.29,
+    "cambio": "5.81"
+  },
+  {
+    "fecha": "2020-08-01",
+    "precio": 1648.14,
+    "apertura": 1676.91,
+    "maximo": 1749.93,
+    "minimo": 1591.72,
+    "cambio": "-1.69"
+  },
+  {
+    "fecha": "2020-09-01",
+    "precio": 1608.57,
+    "apertura": 1648.65,
+    "maximo": 1664.99,
+    "minimo": 1586.04,
+    "cambio": "-2.40"
+  },
+  {
+    "fecha": "2020-10-01",
+    "precio": 1612.3,
+    "apertura": 1609.17,
+    "maximo": 1636.31,
+    "minimo": 1589.56,
+    "cambio": "0.23"
+  },
+  {
+    "fecha": "2020-11-01",
+    "precio": 1488.93,
+    "apertura": 1611.72,
+    "maximo": 1652.79,
+    "minimo": 1472.75,
+    "cambio": "-7.65"
+  },
+  {
+    "fecha": "2020-12-01",
+    "precio": 1553.65,
+    "apertura": 1489.65,
+    "maximo": 1565.05,
+    "minimo": 1487.45,
+    "cambio": "4.35"
+  },
+  {
+    "fecha": "2021-01-01",
+    "precio": 1521.04,
+    "apertura": 1553.78,
+    "maximo": 1591.91,
+    "minimo": 1492.33,
+    "cambio": "-2.10"
+  },
+  {
+    "fecha": "2021-02-01",
+    "precio": 1435.25,
+    "apertura": 1521.01,
+    "maximo": 1547.49,
+    "minimo": 1419.72,
+    "cambio": "-5.64"
+  },
+  {
+    "fecha": "2021-03-01",
+    "precio": 1455.22,
+    "apertura": 1435.46,
+    "maximo": 1478.44,
+    "minimo": 1411.17,
+    "cambio": "1.39"
+  },
+  {
+    "fecha": "2021-04-01",
+    "precio": 1471.13,
+    "apertura": 1455.73,
+    "maximo": 1497.24,
+    "minimo": 1447.49,
+    "cambio": "1.09"
+  },
+  {
+    "fecha": "2021-05-01",
+    "precio": 1560.15,
+    "apertura": 1470.53,
+    "maximo": 1566.48,
+    "minimo": 1468.45,
+    "cambio": "6.05"
+  },
+  {
+    "fecha": "2021-06-01",
+    "precio": 1492.4,
+    "apertura": 1560.63,
+    "maximo": 1567.29,
+    "minimo": 1472.48,
+    "cambio": "-4.34"
+  },
+  {
+    "fecha": "2021-07-01",
+    "precio": 1527.62,
+    "apertura": 1493.03,
+    "maximo": 1551.66,
+    "minimo": 1489.67,
+    "cambio": "2.36"
+  },
+  {
+    "fecha": "2021-08-01",
+    "precio": 1534.69,
+    "apertura": 1529.06,
+    "maximo": 1544.71,
+    "minimo": 1433.42,
+    "cambio": "0.46"
+  },
+  {
+    "fecha": "2021-09-01",
+    "precio": 1516.0,
+    "apertura": 1536.19,
+    "maximo": 1543.48,
+    "minimo": 1479.17,
+    "cambio": "-1.22"
+  },
+  {
+    "fecha": "2021-10-01",
+    "precio": 1541.55,
+    "apertura": 1517.19,
+    "maximo": 1559.71,
+    "minimo": 1502.86,
+    "cambio": "1.69"
+  },
+  {
+    "fecha": "2021-11-01",
+    "precio": 1564.31,
+    "apertura": 1542.86,
+    "maximo": 1654.2,
+    "minimo": 1518.99,
+    "cambio": "1.48"
+  },
+  {
+    "fecha": "2021-12-01",
+    "precio": 1607.8,
+    "apertura": 1565.24,
+    "maximo": 1613.32,
+    "minimo": 1554.96,
+    "cambio": "2.78"
+  },
+  {
+    "fecha": "2022-01-01",
+    "precio": 1598.98,
+    "apertura": 1609.06,
+    "maximo": 1643.31,
+    "minimo": 1575.14,
+    "cambio": "-0.55"
+  },
+  {
+    "fecha": "2022-02-01",
+    "precio": 1700.34,
+    "apertura": 1599.89,
+    "maximo": 1768.43,
+    "minimo": 1566.5,
+    "cambio": "6.34"
+  },
+  {
+    "fecha": "2022-03-01",
+    "precio": 1749.11,
+    "apertura": 1701.05,
+    "maximo": 1902.73,
+    "minimo": 1696.98,
+    "cambio": "2.87"
+  },
+  {
+    "fecha": "2022-04-01",
+    "precio": 1798.42,
+    "apertura": 1750.38,
+    "maximo": 1848.59,
+    "minimo": 1733.69,
+    "cambio": "2.82"
+  },
+  {
+    "fecha": "2022-05-01",
+    "precio": 1710.8,
+    "apertura": 1797.94,
+    "maximo": 1809.89,
+    "minimo": 1709.28,
+    "cambio": "-4.87"
+  },
+  {
+    "fecha": "2022-06-01",
+    "precio": 1722.87,
+    "apertura": 1711.23,
+    "maximo": 1789.74,
+    "minimo": 1704.76,
+    "cambio": "0.71"
+  },
+  {
+    "fecha": "2022-07-01",
+    "precio": 1727.24,
+    "apertura": 1724.09,
+    "maximo": 1754.91,
+    "minimo": 1643.57,
+    "cambio": "0.25"
+  },
+  {
+    "fecha": "2022-08-01",
+    "precio": 1699.52,
+    "apertura": 1728.54,
+    "maximo": 1769.4,
+    "minimo": 1700.52,
+    "cambio": "-1.60"
+  },
+  {
+    "fecha": "2022-09-01",
+    "precio": 1693.14,
+    "apertura": 1700.9,
+    "maximo": 1734.76,
+    "minimo": 1659.83,
+    "cambio": "-0.38"
+  },
+  {
+    "fecha": "2022-10-01",
+    "precio": 1651.69,
+    "apertura": 1694.56,
+    "maximo": 1754.08,
+    "minimo": 1646.69,
+    "cambio": "-2.45"
+  },
+  {
+    "fecha": "2022-11-01",
+    "precio": 1698.4,
+    "apertura": 1652.35,
+    "maximo": 1734.62,
+    "minimo": 1649.73,
+    "cambio": "2.83"
+  },
+  {
+    "fecha": "2022-12-01",
+    "precio": 1704.09,
+    "apertura": 1700.0,
+    "maximo": 1721.42,
+    "minimo": 1659.94,
+    "cambio": "0.34"
+  },
+  {
+    "fecha": "2023-01-01",
+    "precio": 1774.92,
+    "apertura": 1705.01,
+    "maximo": 1786.18,
+    "minimo": 1703.34,
+    "cambio": "4.16"
+  },
+  {
+    "fecha": "2023-02-01",
+    "precio": 1726.63,
+    "apertura": 1775.1,
+    "maximo": 1781.99,
+    "minimo": 1701.27,
+    "cambio": "-2.72"
+  },
+  {
+    "fecha": "2023-03-01",
+    "precio": 1815.63,
+    "apertura": 1728.46,
+    "maximo": 1885.74,
+    "minimo": 1714.22,
+    "cambio": "5.15"
+  },
+  {
+    "fecha": "2023-04-01",
+    "precio": 1804.61,
+    "apertura": 1815.39,
+    "maximo": 1856.47,
+    "minimo": 1791.46,
+    "cambio": "-0.61"
+  },
+  {
+    "fecha": "2023-05-01",
+    "precio": 1834.55,
+    "apertura": 1803.3,
+    "maximo": 1873.06,
+    "minimo": 1798.3,
+    "cambio": "1.66"
+  },
+  {
+    "fecha": "2023-06-01",
+    "precio": 1758.83,
+    "apertura": 1835.24,
+    "maximo": 1845.01,
+    "minimo": 1739.38,
+    "cambio": "-4.13"
+  },
+  {
+    "fecha": "2023-07-01",
+    "precio": 1786.32,
+    "apertura": 1759.68,
+    "maximo": 1792.35,
+    "minimo": 1733.72,
+    "cambio": "1.56"
+  },
+  {
+    "fecha": "2023-08-01",
+    "precio": 1788.52,
+    "apertura": 1786.92,
+    "maximo": 1793.48,
+    "minimo": 1730.89,
+    "cambio": "0.12"
+  },
+  {
+    "fecha": "2023-09-01",
+    "precio": 1747.98,
+    "apertura": 1788.88,
+    "maximo": 1819.15,
+    "minimo": 1746.79,
+    "cambio": "-2.27"
+  },
+  {
+    "fecha": "2023-10-01",
+    "precio": 1874.57,
+    "apertura": 1749.22,
+    "maximo": 1902.27,
+    "minimo": 1722.19,
+    "cambio": "7.24"
+  },
+  {
+    "fecha": "2023-11-01",
+    "precio": 1870.06,
+    "apertura": 1875.98,
+    "maximo": 1888.13,
+    "minimo": 1798.86,
+    "cambio": "-0.24"
+  },
+  {
+    "fecha": "2023-12-01",
+    "precio": 1868.63,
+    "apertura": 1870.6,
+    "maximo": 1940.72,
+    "minimo": 1829.63,
+    "cambio": "-0.08"
+  },
+  {
+    "fecha": "2024-01-01",
+    "precio": 1885.16,
+    "apertura": 1867.75,
+    "maximo": 1892.26,
+    "minimo": 1838.05,
+    "cambio": "0.88"
+  },
+  {
+    "fecha": "2024-02-01",
+    "precio": 1891.15,
+    "apertura": 1886.04,
+    "maximo": 1902.06,
+    "minimo": 1851.8,
+    "cambio": "0.32"
+  },
+  {
+    "fecha": "2024-03-01",
+    "precio": 2068.16,
+    "apertura": 1891.85,
+    "maximo": 2073.84,
+    "minimo": 1885.23,
+    "cambio": "9.36"
+  },
+  {
+    "fecha": "2024-04-01",
+    "precio": 2142.6,
+    "apertura": 2069.8,
+    "maximo": 2287.0,
+    "minimo": 2067.89,
+    "cambio": "3.60"
+  },
+  {
+    "fecha": "2024-05-01",
+    "precio": 2145.6,
+    "apertura": 2143.46,
+    "maximo": 2252.1,
+    "minimo": 2113.66,
+    "cambio": "0.14"
+  },
+  {
+    "fecha": "2024-06-01",
+    "precio": 2170.96,
+    "apertura": 2144.76,
+    "maximo": 2217.36,
+    "minimo": 2116.78,
+    "cambio": "1.18"
+  },
+  {
+    "fecha": "2024-07-01",
+    "precio": 2259.89,
+    "apertura": 2168.75,
+    "maximo": 2277.09,
+    "minimo": 2154.57,
+    "cambio": "4.10"
+  },
+  {
+    "fecha": "2024-08-01",
+    "precio": 2265.6,
+    "apertura": 2260.84,
+    "maximo": 2285.79,
+    "minimo": 2155.23,
+    "cambio": "0.25"
+  },
+  {
+    "fecha": "2024-09-01",
+    "precio": 2365.84,
+    "apertura": 2266.09,
+    "maximo": 2407.73,
+    "minimo": 2236.43,
+    "cambio": "4.42"
+  },
+  {
+    "fecha": "2024-10-01",
+    "precio": 2520.98,
+    "apertura": 2366.25,
+    "maximo": 2578.18,
+    "minimo": 2363.67,
+    "cambio": "6.56"
+  },
+  {
+    "fecha": "2024-11-01",
+    "precio": 2508.55,
+    "apertura": 2520.54,
+    "maximo": 2607.26,
+    "minimo": 2411.62,
+    "cambio": "-0.49"
+  },
+  {
+    "fecha": "2024-12-01",
+    "precio": 2534.1,
+    "apertura": 2509.05,
+    "maximo": 2595.13,
+    "minimo": 2470.8,
+    "cambio": "1.02"
+  },
+  {
+    "fecha": "2025-01-01",
+    "precio": 2702.93,
+    "apertura": 2535.02,
+    "maximo": 2717.73,
+    "minimo": 2517.43,
+    "cambio": "6.66"
+  },
+  {
+    "fecha": "2025-02-01",
+    "precio": 2755.03,
+    "apertura": 2722.77,
+    "maximo": 2857.53,
+    "minimo": 2711.43,
+    "cambio": "1.93"
+  },
+  {
+    "fecha": "2025-03-01",
+    "precio": 2887.69,
+    "apertura": 2753.44,
+    "maximo": 2894.98,
+    "minimo": 2655.67,
+    "cambio": "4.82"
+  },
+  {
+    "fecha": "2025-04-01",
+    "precio": 2902.87,
+    "apertura": 2887.76,
+    "maximo": 3036.35,
+    "minimo": 2697.06,
+    "cambio": "0.53"
+  },
+  {
+    "fecha": "2025-05-01",
+    "precio": 2898.67,
+    "apertura": 2903.69,
+    "maximo": 3023.47,
+    "minimo": 2788.3,
+    "cambio": "-0.14"
+  },
+  {
+    "fecha": "2025-06-01",
+    "precio": 2802.07,
+    "apertura": 2899.95,
+    "maximo": 2995.5,
+    "minimo": 2770.17,
+    "cambio": "-3.33"
+  },
+  {
+    "fecha": "2025-07-01",
+    "precio": 2882.86,
+    "apertura": 2802.02,
+    "maximo": 2929.73,
+    "minimo": 2801.34,
+    "cambio": "2.88"
+  },
+  {
+    "fecha": "2025-08-01",
+    "precio": 2950.62,
+    "apertura": 2882.12,
+    "maximo": 2952.92,
+    "minimo": 2838.68,
+    "cambio": "2.35"
+  },
+  {
+    "fecha": "2025-09-01",
+    "precio": 3288.8,
+    "apertura": 2950.54,
+    "maximo": 3299.96,
+    "minimo": 2939.57,
+    "cambio": "11.46"
+  },
+  {
+    "fecha": "2025-10-01",
+    "precio": 3469.53,
+    "apertura": 3288.94,
+    "maximo": 3764.36,
+    "minimo": 3266.54,
+    "cambio": "5.50"
+  },
+  {
+    "fecha": "2025-11-01",
+    "precio": 3648.35,
+    "apertura": 3469.54,
+    "maximo": 3652.72,
+    "minimo": 3421.77,
+    "cambio": "5.15"
+  },
+  {
+    "fecha": "2025-12-01",
+    "precio": 3673.83,
+    "apertura": 3648.35,
+    "maximo": 3865.71,
+    "minimo": 3579.98,
+    "cambio": "0.70"
+  },
+  {
+    "fecha": "2026-01-01",
+    "precio": 4105.78,
+    "apertura": 3675.24,
+    "maximo": 4669.97,
+    "minimo": 3672.27,
+    "cambio": "11.76"
+  },
+  {
+    "fecha": "2026-02-01",
+    "precio": 4467.49,
+    "apertura": 4103.53,
+    "maximo": 4469.66,
+    "minimo": 3717.18,
+    "cambio": "8.81"
+  },
+  {
+    "fecha": "2026-03-01",
+    "precio": 4041.39,
+    "apertura": 4476.41,
+    "maximo": 4629.18,
+    "minimo": 3672.61,
+    "cambio": "-9.54"
+  },
+  {
+    "fecha": "2026-04-01",
+    "precio": 3940.35,
+    "apertura": 4041.84,
+    "maximo": 4156.12,
+    "minimo": 3858.79,
+    "cambio": "-2.50"
+  },
+  {
+    "fecha": "2026-05-01",
+    "precio": 3905.1,
+    "apertura": 3940.51,
+    "maximo": 4053.7,
+    "minimo": 3851.16,
+    "cambio": "-0.89"
+  }
+]
