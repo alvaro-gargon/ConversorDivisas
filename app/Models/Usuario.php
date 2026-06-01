@@ -20,4 +20,9 @@ class Usuario extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function divisasFavoritas()
+    {
+        return $this->hasMany(DivisasFavUsuario::class, 'id_usuario');
+    }
 }
