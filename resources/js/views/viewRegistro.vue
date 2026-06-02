@@ -91,7 +91,19 @@ export default {
   }
 
   .camposFormulario{
-    margin-bottom: 1%;
-    border-radius: 5px;
+    border-radius: 30px;
+    background: #16171C;
+    border: 1px solid #252629;
+    padding: 10px 14px;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s;
+    color: #EDE9E0;
+  }
+  .camposFormulario:focus-within {
+    border-color: #B8955A;
+  }
+  .camposFormulario:focus{
+    outline: none;
+    border-color: #B8955A;
   }
 </style>
