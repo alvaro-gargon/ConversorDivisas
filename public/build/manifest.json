@@ -58,7 +58,7 @@
     "isDynamicEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-D1BD-nwt.css",
+    "file": "assets/app-BptYriNC.css",
     "name": "app",
     "names": [
       "app.css"
@@ -76,7 +76,7 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main-SYp0V6Fy.js",
+    "file": "assets/main-1TgHntGL.js",
     "name": "main",
     "src": "resources/js/main.js",
     "isEntry": true,
@@ -84,7 +84,7 @@
       "node_modules/vue3-apexcharts/dist/apexcharts.ssr.esm-fe46cd2d.js"
     ],
     "css": [
-      "assets/main-BTsPTfWx.css"
+      "assets/main-k8wC96gX.css"
     ]
   }
 }
