@@ -178,7 +178,7 @@ export default {
   gap: 10px;
   background: #16171C;
   border: 1px solid #252629;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 10px 14px;
   margin-bottom: 1rem;
   transition: border-color 0.2s;
@@ -213,7 +213,7 @@ export default {
 .pestana {
   background: #16171C;
   border: 1px solid #252629;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 6px 16px;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 12px;
@@ -248,7 +248,7 @@ export default {
   gap: 14px;
   background: #16171C;
   border: 1px solid #252629;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 12px 14px;
   transition: border-color 0.2s, background 0.2s;
   cursor: default;

@@ -202,7 +202,7 @@ export default {
   align-items: center;
   background: #0E0F12;
   border: 1px solid #252629;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 10px 12px;
   gap: 8px;
 }
@@ -255,7 +255,7 @@ export default {
   padding: 0.85rem 1rem;
   background: #0E0F12;
   border: 1px solid #252629;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-bottom: 1rem;
 }
 .textoCambio {
@@ -286,7 +286,7 @@ export default {
   width: 100%;
   background: #B8955A;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 13px;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 14px;

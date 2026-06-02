@@ -177,7 +177,7 @@ export default {
   gap: 10px;
   background: #0E0F12;
   border: 1px solid #252629;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px 12px;
   cursor: pointer;
   text-align: left;
