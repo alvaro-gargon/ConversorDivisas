@@ -297,7 +297,7 @@ export default {
 .inputFecha {
     background: #0E0F12;
     border: 1px solid #252629;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px 12px;
     color: #EDE9E0;
     font-family: 'DM Sans', system-ui, sans-serif;
@@ -331,7 +331,7 @@ export default {
     width: 100%;
     background: #B8955A;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 13px;
     font-family: 'DM Sans', system-ui, sans-serif;
     font-size: 14px;

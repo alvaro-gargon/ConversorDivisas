@@ -96,7 +96,7 @@
 .botonNav {
   background: #16171C;
   border: 1px solid #252629;
-  border-radius: 12px;
+  border-radius: 20px;
   padding: 1.1rem 1.25rem;
   cursor: pointer;
   text-align: left;
@@ -121,8 +121,8 @@
   background: #C9A466;
   border-color: transparent;
 }
-.botonNavLargo .tituloBoton { color: #0E0F12; }
-.botonNavLargol .descBoton  { color: rgba(14,15,18,0.55); }
+.botonNavLargo .tituloBoton { color: black; }
+.botonNavLargo .descBoton  { color: rgba(14,15,18,0.55); }
 
 .iconoBoton {
   font-size: 18px;
@@ -143,7 +143,7 @@
 }
 .flechaBoton {
   font-size: 18px;
-  color: #0E0F12;
+  color: black;
   opacity: 0.5;
 }
 </style>
