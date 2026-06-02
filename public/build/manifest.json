@@ -76,7 +76,7 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main-1TgHntGL.js",
+    "file": "assets/main-BMEmsEMo.js",
     "name": "main",
     "src": "resources/js/main.js",
     "isEntry": true,
@@ -84,7 +84,7 @@
       "node_modules/vue3-apexcharts/dist/apexcharts.ssr.esm-fe46cd2d.js"
     ],
     "css": [
-      "assets/main-k8wC96gX.css"
+      "assets/main-DZ09Kwi7.css"
     ]
   }
 }
