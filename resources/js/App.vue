@@ -10,7 +10,6 @@ const estaLogeado = computed(() => !!tokenReactivo.value)
 
 function cerrarSesion(){
   logout();
-  
 }
 
 const enlace = "/images/logo/logo-lg.svg"
@@ -27,6 +26,9 @@ const alt = "Logo app"
       </div>
       <h1>Álvaro García González</h1>
       <div v-if="estaLogeado" class="cajaPerfil">
+        <div class="imagenPerfil">
+          
+        </div>
         <button @click="$router.push('/'); cerrarSesion()">Cerrar sesion</button>
       </div>
     </header>
@@ -112,6 +114,22 @@ main {
   text-transform: uppercase;
   color: #B8955A;
   margin: 0;
+}
+
+.cajaPerfil{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 480px;
+  height: 80px;
+  background-color: red;
+}
+
+.cajaPerfil .imagenPerfil{
+  width: 80px;
+  height: 80px;
+  border: 1px solid blue;
+  border-radius: 100px;
 }
 
 footer {
