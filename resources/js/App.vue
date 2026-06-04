@@ -3,11 +3,16 @@ import { RouterLink, RouterView } from 'vue-router'
 import Logo from '@/components/logo.vue'
 import { tokenReactivo } from './auth';
 import { computed } from 'vue';
+import { logout } from './auth';
 
 //computed en setup
 const estaLogeado = computed(() => !!tokenReactivo.value)
 
-console.log(estaLogeado)
+function cerrarSesion(){
+  logout();
+  
+}
+
 const enlace = "/images/logo/logo-lg.svg"
 const alt = "Logo app"
 </script>
@@ -22,7 +27,7 @@ const alt = "Logo app"
       </div>
       <h1>Álvaro García González</h1>
       <div v-if="estaLogeado" class="cajaPerfil">
-        casdasdfas
+        <button @click="$router.push('/'); cerrarSesion()">Cerrar sesion</button>
       </div>
     </header>
 
@@ -117,7 +122,7 @@ footer {
   padding: 10px;
 }
 
-footer button {
+.cajaPerfil button {
   width: 160px;
   height: 40px;
   background: #16171C;
@@ -131,7 +136,7 @@ footer button {
   transition: border-color 0.2s, background 0.2s;
 }
 
-footer button:hover {
+.cajaPerfil button:hover {
   border-color: #B8955A;
   background: #1C1C22;
 }
