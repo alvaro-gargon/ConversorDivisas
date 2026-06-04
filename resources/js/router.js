@@ -13,7 +13,7 @@ import ViewAvatares from './views/viewAvatares.vue'
 // import viewComponentes from './views/viewComponentes.vue'
 // import viewComponentesDinamicos from './views/viewComponentesDinamicos.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/'),
   routes: [
     {
       path: '/',
