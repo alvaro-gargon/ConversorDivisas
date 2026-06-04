@@ -44,7 +44,7 @@ const alt = "Logo app"
       <h1>Álvaro García González</h1>
       <div v-if="estaLogeado" class="cajaPerfil">
         <div class="imagenPerfil"@click="$router.push('/avatares')">
-          <Avatar v-if="imagenUsuario" :nombreArchivo="imagenUsuario" />
+          <Avatar :nombreArchivo="imagenUsuario ?? 'avatarpordefecto.jpg'" />
         </div>
         <button @click="$router.push('/'); cerrarSesion()">Cerrar sesion</button>
       </div>
