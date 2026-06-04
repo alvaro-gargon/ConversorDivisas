@@ -1,7 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Logo from '@/components/logo.vue'
+import { tokenReactivo } from './auth';
+import { computed } from 'vue';
 
+//computed en setup
+const estaLogeado = computed(() => !!tokenReactivo.value)
+
+console.log(estaLogeado)
 const enlace = "/images/logo/logo-lg.svg"
 const alt = "Logo app"
 </script>
@@ -15,8 +21,8 @@ const alt = "Logo app"
         </button>
       </div>
       <h1>Álvaro García González</h1>
-      <div class="cajaInfo">
-        <p>DAW I.E.S Los Sauces</p>
+      <div v-if="estaLogeado" class="cajaPerfil">
+        casdasdfas
       </div>
     </header>
 
@@ -24,6 +30,9 @@ const alt = "Logo app"
   </main>
   <footer>
       <h2>Álvaro García González</h2>
+      <div class="cajaInfo">
+        <p>DAW I.E.S Los Sauces</p>
+      </div>
   </footer>
 </template>
 

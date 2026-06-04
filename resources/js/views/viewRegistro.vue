@@ -43,12 +43,6 @@ export default {
         } else {
           this.error = e.response?.data?.message || 'Error al registrarse'
         }
-        // this.error = e.response?.data?.mensaje || 'Error al registrarse'
-        
-        // console.log('Status:', e.response?.status)
-        // console.log('Data:', e.response?.data)
-        // console.log('Error completo:', e)
-        // this.error = JSON.stringify(e.response?.data) || 'Error al registrarse'
       }
     }
   }
