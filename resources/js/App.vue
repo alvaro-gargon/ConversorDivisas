@@ -4,12 +4,29 @@ import Logo from '@/components/logo.vue'
 import { tokenReactivo } from './auth';
 import { computed } from 'vue';
 import { logout } from './auth';
-
+import Avatar from '@/components/avatar.vue';
+import axios from 'axios'
+import { ref, onMounted } from 'vue'
 //computed en setup
 const estaLogeado = computed(() => !!tokenReactivo.value)
 
 function cerrarSesion(){
   logout();
+}
+const imagenUsuario = ref(null)
+
+onMounted(() => {
+    axios.get('/api/fotoPerfil').then(response => {
+        imagenUsuario.value = response.data.imagen_usuario
+    })
+
+    window.addEventListener('avatarActualizado', () => {
+        imagenUsuario.value = localStorage.getItem('imagenUsuario')
+    })
+})
+
+function actualizarAvatar(nuevoAvatar) {
+    imagenUsuario.value = nuevoAvatar
 }
 
 const enlace = "/images/logo/logo-lg.svg"
@@ -26,8 +43,8 @@ const alt = "Logo app"
       </div>
       <h1>Álvaro García González</h1>
       <div v-if="estaLogeado" class="cajaPerfil">
-        <div class="imagenPerfil">
-          
+        <div class="imagenPerfil"@click="$router.push('/avatares')">
+          <Avatar v-if="imagenUsuario" :nombreArchivo="imagenUsuario" />
         </div>
         <button @click="$router.push('/'); cerrarSesion()">Cerrar sesion</button>
       </div>
@@ -122,14 +139,14 @@ main {
   align-items: center;
   width: 480px;
   height: 80px;
-  background-color: red;
 }
 
 .cajaPerfil .imagenPerfil{
   width: 80px;
   height: 80px;
-  border: 1px solid blue;
+  border: 1px solid black;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 footer {
