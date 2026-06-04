@@ -1,6 +1,33 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Logo from '@/components/logo.vue'
+import { tokenReactivo } from './auth';
+import { computed } from 'vue';
+import { logout } from './auth';
+import Avatar from '@/components/avatar.vue';
+import axios from 'axios'
+import { ref, onMounted } from 'vue'
+//computed en setup
+const estaLogeado = computed(() => !!tokenReactivo.value)
+
+function cerrarSesion(){
+  logout();
+}
+const imagenUsuario = ref(null)
+
+onMounted(() => {
+    axios.get('/api/fotoPerfil').then(response => {
+        imagenUsuario.value = response.data.imagen_usuario
+    })
+
+    window.addEventListener('avatarActualizado', () => {
+        imagenUsuario.value = localStorage.getItem('imagenUsuario')
+    })
+})
+
+function actualizarAvatar(nuevoAvatar) {
+    imagenUsuario.value = nuevoAvatar
+}
 
 const enlace = "/images/logo/logo-lg.svg"
 const alt = "Logo app"
@@ -15,8 +42,11 @@ const alt = "Logo app"
         </button>
       </div>
       <h1>Álvaro García González</h1>
-      <div class="cajaInfo">
-        <p>DAW I.E.S Los Sauces</p>
+      <div v-if="estaLogeado" class="cajaPerfil">
+        <div class="imagenPerfil"@click="$router.push('/avatares')">
+          <Avatar v-if="imagenUsuario" :nombreArchivo="imagenUsuario" />
+        </div>
+        <button @click="$router.push('/'); cerrarSesion()">Cerrar sesion</button>
       </div>
     </header>
 
@@ -24,6 +54,9 @@ const alt = "Logo app"
   </main>
   <footer>
       <h2>Álvaro García González</h2>
+      <div class="cajaInfo">
+        <p>DAW I.E.S Los Sauces</p>
+      </div>
   </footer>
 </template>
 
@@ -100,6 +133,22 @@ main {
   margin: 0;
 }
 
+.cajaPerfil{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 480px;
+  height: 80px;
+}
+
+.cajaPerfil .imagenPerfil{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
 footer {
   background: #0E0F12;
   border-top: 1px solid #252629;
@@ -108,7 +157,7 @@ footer {
   padding: 10px;
 }
 
-footer button {
+.cajaPerfil button {
   width: 160px;
   height: 40px;
   background: #16171C;
@@ -122,7 +171,7 @@ footer button {
   transition: border-color 0.2s, background 0.2s;
 }
 
-footer button:hover {
+.cajaPerfil button:hover {
   border-color: #B8955A;
   background: #1C1C22;
 }

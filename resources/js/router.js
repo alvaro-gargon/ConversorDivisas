@@ -8,6 +8,7 @@ import { estaLogeado } from './auth.js'
 import ViewConversor from './views/viewConversor.vue'
 import ViewHistorico from './views/viewHistorico.vue'
 import ViewGestionarDivisas from './views/viewGestionarDivisas.vue'
+import ViewAvatares from './views/viewAvatares.vue'
 // import viewApi from './views/viewApi.vue'
 // import viewComponentes from './views/viewComponentes.vue'
 // import viewComponentesDinamicos from './views/viewComponentesDinamicos.vue'
@@ -46,6 +47,12 @@ const router = createRouter({
       path: '/gestionDivisas',
       name: 'gestionDivisas',
       component: ViewGestionarDivisas,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/avatares',
+      name: 'avatares',
+      component: ViewAvatares,
       meta: { requiresAuth: true }
     },
      //esta tiene que ser siempre la ultima (ruta para cuando no encuentra la ruta(valga la redundancia))

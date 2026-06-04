@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/main.js','resources/css/estilos.css'],
+            input: ['resources/css/app.css', 'resources/js/main.js', 'resources/css/estilos.css'],
             refresh: true,
             fonts: [
                 bunny('Instrument Sans', {
@@ -15,10 +15,20 @@ export default defineConfig({
                 }),
             ],
         }),
-	    vue(),
+        vue(),
         tailwindcss(),
     ],
     server: {
+        host: '0.0.0.0',
+        port: 5173,
+        cors: true,
+        headers: {
+            'Access-Control-Allow-Private-Network': 'true',
+        },
+        hmr: {
+            host: '192.168.1.134',
+            port: 5173,
+        },
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
