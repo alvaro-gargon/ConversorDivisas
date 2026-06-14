@@ -10,23 +10,28 @@ import { ref, onMounted } from 'vue'
 //computed en setup
 const estaLogeado = computed(() => !!tokenReactivo.value)
 
-function cerrarSesion(){
+function cerrarSesion() {
   logout();
 }
 const imagenUsuario = ref(null)
+const nombreUsuario = ref(null)
 
 onMounted(() => {
-    axios.get('/api/fotoPerfil').then(response => {
-        imagenUsuario.value = response.data.imagen_usuario
-    })
+  axios.get('/api/fotoPerfil').then(response => {
+    imagenUsuario.value = response.data.imagen_usuario
+  })
 
-    window.addEventListener('avatarActualizado', () => {
-        imagenUsuario.value = localStorage.getItem('imagenUsuario')
-    })
+  axios.get('/api/nombreUsuario').then(response => {
+    nombreUsuario.value = response.data.nombre_usuario
+  })
+
+  window.addEventListener('avatarActualizado', () => {
+    imagenUsuario.value = localStorage.getItem('imagenUsuario')
+  })
 })
 
 function actualizarAvatar(nuevoAvatar) {
-    imagenUsuario.value = nuevoAvatar
+  imagenUsuario.value = nuevoAvatar
 }
 
 const enlace = "/images/logo/logo-lg.svg"
@@ -43,8 +48,9 @@ const alt = "Logo app"
       </div>
       <h1>Álvaro García González</h1>
       <div v-if="estaLogeado" class="cajaPerfil">
-        <div class="imagenPerfil"@click="$router.push('/avatares')">
+        <div class="imagenPerfil" @click="$router.push('/avatares')">
           <Avatar :nombreArchivo="imagenUsuario ?? 'avatarpordefecto.jpg'" />
+          <h3 style="margin: 0;">{{ nombreUsuario }}</h3>
         </div>
         <button @click="$router.push('/'); cerrarSesion()">Cerrar sesion</button>
       </div>
@@ -53,10 +59,10 @@ const alt = "Logo app"
     <RouterView />
   </main>
   <footer>
-      <h2>Álvaro García González</h2>
-      <div class="cajaInfo">
-        <p>DAW I.E.S Los Sauces</p>
-      </div>
+    <h2>Álvaro García González</h2>
+    <div class="cajaInfo">
+      <p>DAW I.E.S Los Sauces</p>
+    </div>
   </footer>
 </template>
 
@@ -69,9 +75,11 @@ body,
   height: 100%;
   margin: 0;
 }
-*{
-  color:#EDE9E0;
+
+* {
+  color: #EDE9E0;
 }
+
 #app {
   display: flex;
   flex-direction: column;
@@ -104,12 +112,12 @@ main {
   margin-right: 14%;
 }
 
-.botonLogo{
+.botonLogo {
   background: #0E0F12;
   border: 0px;
 }
 
-.botonLogo:hover{
+.botonLogo:hover {
   cursor: pointer;
 }
 
@@ -133,7 +141,7 @@ main {
   margin: 0;
 }
 
-.cajaPerfil{
+.cajaPerfil {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -141,7 +149,7 @@ main {
   height: 80px;
 }
 
-.cajaPerfil .imagenPerfil{
+.cajaPerfil .imagenPerfil {
   width: 80px;
   height: 80px;
   border: 1px solid black;

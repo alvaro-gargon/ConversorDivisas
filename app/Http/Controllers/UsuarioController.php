@@ -14,6 +14,12 @@ class UsuarioController extends Controller
         return Usuario::where('user_id', '=', Auth::id())->value('id');
     }
 
+    public function getNombreUsuario()
+    {
+        $nombreUsuario=Usuario::where('user_id', '=', Auth::id())->value('nombre_usuario');
+        return response()->json(['nombre_usuario' => $nombreUsuario]); 
+    }
+
     public function getFotoPerfil()
     {
         $fotoPerfil = Usuario::where('id', $this->getIdUsuario())->value('imagen_usuario');

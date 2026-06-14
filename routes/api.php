@@ -18,6 +18,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('/favoritos/{id}', [DivisasFavUsuarioController::class, 'destroy']);
     Route::get('/fotoPerfil',[UsuarioController::class, 'getFotoPerfil']);
     Route::get('/avatares', [UsuarioController::class, 'getAvatares']);
+    Route::get('/nombreUsuario', [UsuarioController::class, 'getNombreUsuario']);
     Route::patch('/editarFotoPerfil', [UsuarioController::class, 'editarFotoPerfil']);
 });
 Route::get('/historico', [HistoricoController::class, 'historico']);
